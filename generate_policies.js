@@ -201,7 +201,7 @@ policies.forEach(p => {
   <main class="section-padding" style="background-color: var(--color-bg); min-height: 75vh; padding-top: 36px; padding-bottom: 80px;">
     <div class="container container-narrow">
       <div class="product-breadcrumb" style="margin-bottom: 24px;">
-        <a href="/">Home</a> &sol; <span>${p.h1}</span>
+        <a href="index.html">Home</a> &sol; <span>${p.h1}</span>
       </div>
 
       <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; padding: 48px; box-shadow: var(--shadow-sm);" class="policy-card">

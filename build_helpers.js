@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-function getHead(title, desc, canonicalPath = '', schemaObj = null, ogImage = 'assets/brand/logo-burgundy.svg') {
+function getHead(title, desc, canonicalPath = '', schemaObj = null, ogImage = 'assets/brand/logo-burgundy.png') {
   const canonicalUrl = canonicalPath ? `https://www.glowisticpk.com/${canonicalPath}` : 'https://www.glowisticpk.com';
-  const fullOgImage = ogImage.startsWith('http') ? ogImage : `https://www.glowisticpk.com/${ogImage}`;
+  const fullOgImage = ogImage.startsWith('http') ? ogImage : `https://www.glowisticpk.com/${ogImage.replace(/^\//, '')}`;
   const schemaMarkup = schemaObj ? `\n  <script type="application/ld+json">\n${JSON.stringify(schemaObj, null, 2)}\n  </script>` : '';
 
   return `<!DOCTYPE html>
@@ -14,7 +14,9 @@ function getHead(title, desc, canonicalPath = '', schemaObj = null, ogImage = 'a
   <title>${title}</title>
   <meta name="description" content="${desc}" />
   <link rel="canonical" href="${canonicalUrl}" />
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png" />
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/brand/logo-stacked-burgundy.png" />
   
   <!-- Open Graph / Social Sharing -->
   <meta property="og:site_name" content="Glowistic" />
@@ -56,35 +58,35 @@ function getHeader(activePage) {
       </button>
 
       <a href="index.html" class="header-brand" aria-label="Glowistic Home">
-        <img src="assets/brand/logo-burgundy.svg" alt="Glowistic" class="header-logo" />
+        <img src="assets/brand/logo-burgundy.png" alt="Glowistic" class="header-logo" width="160" height="32" />
       </a>
 
       <nav class="header-nav" aria-label="Main Navigation">
-        <a href="index.html" class="nav-link ${activePage === 'home' ? 'is-active' : ''}">Home</a>
-        <a href="shop.html" class="nav-link ${activePage === 'shop' ? 'is-active' : ''}">Shop All</a>
-        <a href="about.html" class="nav-link ${activePage === 'about' ? 'is-active' : ''}">About Us</a>
-        <a href="blog.html" class="nav-link ${activePage === 'blog' ? 'is-active' : ''}">Glow Journal</a>
-        <a href="contact.html" class="nav-link ${activePage === 'contact' ? 'is-active' : ''}">Contact</a>
+        <a href="index.html" class="nav-link ${activePage === 'home' ? 'is-active' : ''}"><span>Home</span></a>
+        <a href="shop.html" class="nav-link ${activePage === 'shop' ? 'is-active' : ''}"><span>Shop All</span></a>
+        <a href="about.html" class="nav-link ${activePage === 'about' ? 'is-active' : ''}"><span>About Us</span></a>
+        <a href="blog.html" class="nav-link ${activePage === 'blog' ? 'is-active' : ''}"><span>Glow Journal</span></a>
+        <a href="contact.html" class="nav-link ${activePage === 'contact' ? 'is-active' : ''}"><span>Contact</span></a>
       </nav>
 
       <div class="header-actions">
         <div class="search-container" id="global-search-container">
           <div class="search-input-wrap">
-            <span class="search-icon-inside">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <span class="search-icon-inside" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
             </span>
             <input type="text" id="global-search-input" class="search-input" placeholder="Search catalog..." autocomplete="off" aria-label="Search catalog" />
           </div>
           <div id="search-results-dropdown" class="search-results-dropdown"></div>
         </div>
 
-        <a href="https://wa.me/923445422609?text=Hi%20Glowistic%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="header-whatsapp-cta">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.535-1.745-.73-2.868-2.52-2.955-2.637-.088-.117-.714-.95-.714-1.815 0-.865.452-1.291.614-1.468.162-.177.353-.221.471-.221.118 0 .235.001.338.006.109.006.255-.041.399.303.147.353.501 1.22.545 1.308.044.088.073.191.015.308-.059.117-.088.19-.177.293-.088.103-.186.23-.265.31-.088.088-.181.185-.078.361.103.176.458.756.983 1.225.677.604 1.248.791 1.425.879.176.088.279.074.382-.044.103-.118.441-.515.559-.691.118-.176.235-.147.397-.088.162.059 1.03.486 1.206.574.177.088.294.132.338.206.044.074.044.428-.1.833z"/></svg>
-          WhatsApp Help
+        <a href="https://wa.me/923445422609?text=Hi%20Glowistic%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="header-whatsapp-cta" aria-label="WhatsApp Help">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.535-1.745-.73-2.868-2.52-2.955-2.637-.088-.117-.714-.95-.714-1.815 0-.865.452-1.291.614-1.468.162-.177.353-.221.471-.221.118 0 .235.001.338.006.109.006.255-.041.399.303.147.353.501 1.22.545 1.308.044.088.073.191.015.308-.059.117-.088.19-.177.293-.088.103-.186.23-.265.31-.088.088-.181.185-.078.361.103.176.458.756.983 1.225.677.604 1.248.791 1.425.879.176.088.279.074.382-.044.103-.118.441-.515.559-.691.118-.176.235-.147.397-.088.162.059 1.03.486 1.206.574.177.088.294.132.338.206.044.074.044.428-.1.833z"/></svg>
+          <span>WhatsApp Help</span>
         </a>
 
         <a href="cart.html" class="header-icon-btn cart-toggle-btn" aria-label="Shopping Cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
           <span class="cart-count-badge">0</span>
         </a>
       </div>
@@ -94,7 +96,7 @@ function getHeader(activePage) {
   <div class="mobile-nav-overlay"></div>
   <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
     <div class="mobile-nav-header">
-      <img src="assets/brand/logo-burgundy.svg" alt="Glowistic" class="mobile-nav-logo" />
+      <img src="assets/brand/logo-burgundy.png" alt="Glowistic" class="mobile-nav-logo" width="160" height="34" />
       <button type="button" class="mobile-nav-close" aria-label="Close Mobile Navigation">&times;</button>
     </div>
     <div class="mobile-nav-body">
@@ -117,14 +119,13 @@ function getHeader(activePage) {
 function getFooter() {
   return `
   <!-- Final Glowistic 5-Column Footer -->
-  <!-- Final Glowistic 5-Column Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-top-grid">
         <!-- Column 1: Glowistic -->
         <div class="footer-col footer-brand-col">
-          <a href="/" class="footer-brand-link" aria-label="Glowistic Home">
-            <img src="/assets/brand/logo-cream.png" alt="Glowistic" class="footer-logo" width="210" height="42" />
+          <a href="index.html" class="footer-brand-link" aria-label="Glowistic Home">
+            <img src="assets/brand/logo-cream.png" alt="Glowistic" class="footer-logo" width="210" height="42" />
           </a>
           <p class="footer-brand-tagline">"Our everyday glow starts here."</p>
           <p class="footer-brand-desc">
@@ -136,13 +137,13 @@ function getFooter() {
         <div class="footer-col">
           <h4>Shop</h4>
           <ul class="footer-links">
-            <li><a href="/shop">All Products</a></li>
-            <li><a href="/shop/skincare">Skincare</a></li>
-            <li><a href="/shop/hair-care">Hair Care</a></li>
-            <li><a href="/shop/personal-care">Personal Care</a></li>
-            <li><a href="/shop/personal-care">Body Care</a></li>
-            <li><a href="/shop/wellness-health">Wellness &amp; Health</a></li>
-            <li><a href="/shop/supplements">Supplements</a></li>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?category=skincare">Skincare</a></li>
+            <li><a href="shop.html?category=hair-care">Hair Care</a></li>
+            <li><a href="shop.html?category=personal-care">Personal Care</a></li>
+            <li><a href="shop.html?category=personal-care">Body Care</a></li>
+            <li><a href="shop.html?category=wellness-health">Wellness &amp; Health</a></li>
+            <li><a href="shop.html?category=supplements">Supplements</a></li>
           </ul>
         </div>
 
@@ -150,11 +151,11 @@ function getFooter() {
         <div class="footer-col">
           <h4>Explore</h4>
           <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/blog">The Glow Journal</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/#faq-section">FAQs</a></li>
-            <li><a href="/shop">Routine Finder</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">The Glow Journal</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html#faq-section">FAQs</a></li>
+            <li><a href="shop.html">Routine Finder</a></li>
           </ul>
         </div>
 
@@ -162,11 +163,11 @@ function getFooter() {
         <div class="footer-col">
           <h4>Customer Care</h4>
           <ul class="footer-links">
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/#faq-section">FAQs</a></li>
-            <li><a href="/shipping-policy">Shipping &amp; Delivery</a></li>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html#faq-section">FAQs</a></li>
+            <li><a href="shipping-policy.html">Shipping &amp; Delivery</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
           </ul>
         </div>
 
@@ -239,6 +240,19 @@ function getFooter() {
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Helpline Button -->
+  <a href="https://wa.me/923445422609?text=Hi%20Glowistic%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." 
+     class="floating-whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat with Glowistic on WhatsApp" 
+     title="Chat with Glowistic on WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.148-.535-1.745-.73-2.868-2.52-2.955-2.637-.088-.117-.714-.95-.714-1.815 0-.865.452-1.291.614-1.468.162-.177.353-.221.471-.221.118 0 .235.001.338.006.109.006.255-.041.399.303.147.353.501 1.22.545 1.308.044.088.073.191.015.308-.059.117-.088.19-.177.293-.088.103-.186.23-.265.31-.088.088-.181.185-.078.361.103.176.458.756.983 1.225.677.604 1.248.791 1.425.879.176.088.279.074.382-.044.103-.118.441-.515.559-.691.118-.176.235-.147.397-.088.162.059 1.03.486 1.206.574.177.088.294.132.338.206.044.074.044.428-.1.833z"/>
+    </svg>
+    <span class="floating-whatsapp-tooltip">Chat with us</span>
+  </a>
+
   <!-- Slide-out Cart Drawer -->
   <div class="cart-overlay" id="cart-overlay"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer">
@@ -290,14 +304,28 @@ function getFooter() {
     </div>
   </aside>
 
-  <!-- Quick View Modal -->
-  <div class="quick-view-overlay" id="quick-view-overlay"></div>
-  <div class="quick-view-modal" id="quick-view-modal" role="dialog" aria-modal="true" aria-label="Product Quick View">
-    <button type="button" class="quick-view-close" id="quick-view-close" aria-label="Close Quick View">&times;</button>
-    <div id="quick-view-body">
-      <!-- Injected dynamically by js/app.js -->
+  <!-- Card Payments Modal -->
+  <div class="modal-overlay" id="card-payments-modal" style="display: none; position: fixed; inset: 0; background: rgba(80, 15, 23, 0.45); backdrop-filter: blur(4px); z-index: 100000; align-items: center; justify-content: center; padding: 20px;">
+    <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; max-width: 440px; width: 100%; padding: 32px 24px; text-align: center; box-shadow: var(--shadow-xl); position: relative;">
+      <button type="button" class="modal-close-btn" id="close-card-modal-btn" style="position: absolute; top: 14px; right: 14px; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-text-muted);">&times;</button>
+      <div style="width: 56px; height: 56px; border-radius: 50%; background: #FDF2E9; color: #D35400; font-size: 1.6rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">🔒</div>
+      <h3 style="font-family: var(--font-heading); color: var(--color-primary); font-size: 1.35rem; margin-bottom: 10px;">Card Payments Coming Soon</h3>
+      <p style="color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+        We're working on secure online card payments.<br/>
+        For now, you can place your order using Cash on Delivery or contact us on WhatsApp.
+      </p>
+      <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://wa.me/923445422609?text=Hi%20Glowistic%2C%20I%20have%20an%20inquiry%20about%20ordering%20and%20payments." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+          💬 Chat on WhatsApp
+        </a>
+        <button type="button" class="btn btn-outline btn-sm" id="dismiss-card-modal-btn">Close</button>
+      </div>
     </div>
   </div>
+
+  <!-- Subtle Circular Cursor Elements -->
+  <div class="glowistic-cursor-dot" id="cursor-dot"></div>
+  <div class="glowistic-cursor-ring" id="cursor-ring"></div>
 
   <!-- Scripts -->
   <script type="module" src="js/app.js"></script>

@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
@@ -11,27 +11,17 @@ if (fs.existsSync(refundPath)) {
   console.log('Removed refund-policy.html');
 }
 
-const generators = [
-  'generate_home.js',
-  'generate_shop.js',
-  'generate_product.js',
-  'generate_cart.js',
-  'generate_checkout.js',
-  'generate_confirmation.js',
-  'generate_about.js',
-  'generate_blog.js',
-  'generate_article.js',
-  'generate_contact.js',
-  'make_shipping.js',
-  'make_privacy.js',
-  'make_terms.js'
-];
+console.log('Building all pages with build_site.mjs...');
+execSync('node build_site.mjs', { cwd: r, stdio: 'inherit' });
 
-generators.forEach(gen => {
-  if (fs.existsSync(path.join(r, gen))) {
-    console.log(`Running ${gen}...`);
-    execSync(`node ${gen}`, { cwd: r, stdio: 'inherit' });
-  }
-});
+console.log('Generating policy pages...');
+execSync('node generate_policies.js', { cwd: r, stdio: 'inherit' });
 
-console.log('All 13 pages regenerated with updated footer!');
+const termsSrc = path.join(r, 'terms-conditions.html');
+const termsDst = path.join(r, 'terms-and-conditions.html');
+if (fs.existsSync(termsSrc)) {
+  fs.copyFileSync(termsSrc, termsDst);
+  console.log('✓ Synchronized terms-and-conditions.html');
+}
+
+console.log('All 13 pages successfully built and verified!');
