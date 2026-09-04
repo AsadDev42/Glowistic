@@ -1,0 +1,1181 @@
+<USER_REQUEST>
+You are working on the existing Glowistic e-commerce website.
+
+IMPORTANT:
+Do NOT redesign the entire website from scratch.
+
+The existing visual direction is already good and should be preserved:
+- Premium
+- Modern
+- Minimal
+- Clean
+- Warm
+- Beauty/wellness focused
+- Maroon/burgundy primary brand color
+- Cream/off-white backgrounds
+- Elegant typography
+- Soft borders
+- Premium product photography
+
+Your job is to FIX the existing website architecture, functionality, routing, product rendering, navigation, blog system, and e-commerce flow.
+
+Do not remove existing sections or working functionality.
+
+Before making changes, inspect the entire existing project and understand:
+1. Existing routes
+2. Existing components
+3. Product data
+4. Blog data
+5. Images/assets
+6. Navigation
+7. Cart system
+8. Checkout system
+9. Forms
+10. Responsive behavior
+
+Then implement the following.
+
+==================================================
+1. CRITICAL ISSUE: PRODUCTS ARE NOT SHOWING
+==================================================
+
+The Shop page currently shows:
+
+"Showing products..."
+
+but actual product cards are not visible.
+
+Fix this completely.
+
+All provided Glowistic products must render correctly inside the Shop page.
+
+Do NOT use placeholder products.
+
+Use the actual product information and product images already provided in the project/assets.
+
+Every product must have:
+
+- Product image
+- Product name
+- Category
+- Short description
+- Price in PKR
+- Availability/status
+- Add to Cart button
+- View Product / product card click interaction
+
+Product cards should feel premium and consistent with the current website design.
+
+Recommended card structure:
+
+[Product Image]
+
+CATEGORY
+
+Product Name
+
+Short product description
+
+Rs. X,XXX
+
+[Add to Cart]
+
+The entire product card image/name area should also be clickable.
+
+==================================================
+2. EVERY PRODUCT MUST HAVE A PRODUCT DETAIL PAGE
+==================================================
+
+This is mandatory.
+
+When a visitor clicks any product, they must be taken to a dedicated product detail page.
+
+Create a dynamic product route such as:
+
+/product/[slug]
+
+Examples:
+
+/product/super-ton-chocolate-granules
+/product/neem-face-wash
+/product/hema-lin-oral-liquid
+/product/o-clear-acne-clear-serum
+/product/lavender-chamomile-lotion
+/product/reroot-onion-rosemary-shampoo
+/product/reroot-hair-growth-pack
+
+Use clean SEO-friendly URLs.
+
+Each product page must include:
+
+1. Breadcrumb
+2. Large product image gallery
+3. Product name
+4. Category
+5. Price
+6. Availability
+7. Product description
+8. Key benefits
+9. Ingredients/details where available
+10. Quantity selector
+11. Add to Cart
+12. Buy / Order Now
+13. WhatsApp Order option
+14. Delivery information
+15. Cash on Delivery information
+16. Free delivery message where applicable
+17. Related products
+
+Example CTA structure:
+
+[−] 1 [+]
+
+[Add to Cart]
+
+[Order via WhatsApp]
+
+WhatsApp should use:
+
+03445422609
+
+The WhatsApp button should automatically prepare a message containing:
+
+Product name
+Quantity
+Product price
+
+Example:
+
+"Hi Glowistic, I want to order:
+Product: Neem Face Wash
+Quantity: 2
+Please share the order details."
+
+==================================================
+3. SHOP CATEGORY NAVIGATION MUST WORK
+==================================================
+
+The current header contains:
+
+Home
+Shop All
+Skincare
+Hair Care
+Wellness & Health
+About Us
+Glow Journal
+Contact
+
+All of these should be real clickable routes.
+
+Create:
+
+/shop
+/shop/skincare
+/shop/hair-care
+/shop/wellness-health
+
+If Personal Care, Body Care, or Supplements exist in the product data, they should also have working category filtering/routes.
+
+Do NOT make navigation items visually clickable but functionally dead.
+
+Every navigation item must lead somewhere meaningful.
+
+==================================================
+4. FIX SKINCARE / HAIR CARE / WELLNESS NAVIGATION
+==================================================
+
+The screenshots show:
+
+Skincare
+Hair Care
+Wellness & Health
+
+These currently appear like static navigation elements.
+
+Make them fully functional.
+
+SKINCARE:
+
+/shop/skincare
+
+Display only skincare products.
+
+Include:
+- Page title
+- Short category introduction
+- Product grid
+- Filters
+- Sorting
+- Product cards
+
+HAIR CARE:
+
+/shop/hair-care
+
+Display only hair-care products.
+
+WELLNESS & HEALTH:
+
+/shop/wellness-health
+
+Display only wellness and health products.
+
+Each category page must use the same product card system.
+
+==================================================
+5. SHOP FILTERS MUST ACTUALLY WORK
+==================================================
+
+The current Shop page has:
+
+Search
+All
+Skincare
+Hair Care
+Personal Care
+Body Care
+Wellness
+Supplements
+In Stock Only
+Max Price
+Sort
+
+These controls currently look like UI but should actually function.
+
+Implement:
+
+Search by product name
+
+Category filtering
+
+In Stock Only filtering
+
+Maximum price filtering
+
+Sorting:
+
+Featured
+Price: Low to High
+Price: High to Low
+Newest
+Name A-Z
+
+Filters should update the product grid instantly.
+
+Do not reload the page unnecessarily.
+
+Show a useful empty state if no products match.
+
+Example:
+
+"No products found"
+
+"Try changing your filters or search."
+
+[Clear Filters]
+
+==================================================
+6. PRODUCT DATA ARCHITECTURE
+==================================================
+
+Create a centralized product data structure.
+
+Do NOT hardcode the same product information separately across different pages.
+
+Each product should have:
+
+id
+slug
+name
+category
+price
+image
+gallery
+shortDescription
+description
+benefits
+ingredients
+availability
+featured
+tags
+
+Example:
+
+{
+  id: "...",
+  slug: "neem-face-wash",
+  name: "Neem Face Wash",
+  category: "Skincare",
+  price: ...,
+  image: "...",
+  shortDescription: "...",
+  description: "...",
+  benefits: [...],
+  availability: "In Stock"
+}
+
+All Shop cards, product pages, related products, search and filters should use this centralized product data.
+
+==================================================
+7. PRODUCT IMAGES MUST MATCH THE PRODUCT
+==================================================
+
+This is extremely important.
+
+Do NOT randomly reuse product images.
+
+Each product must use its own correct image.
+
+For example:
+
+Super Ton → Super Ton image
+
+Neem Face Wash → Neem Face Wash image
+
+Hema-Lin → Hema-Lin image
+
+O'Clear → O'Clear image
+
+Lavender Chamomile Lotion → Lavender Chamomile image
+
+Reroot Onion + Rosemary → Reroot Onion + Rosemary image
+
+Reroot Hair Growth Pack → Reroot Hair Growth Pack image
+
+If multiple product images exist, use them as a gallery on the product detail page.
+
+Never use a different product image just because it is available.
+
+==================================================
+8. BLOG SYSTEM MUST BE FULLY FUNCTIONAL
+==================================================
+
+The existing Glow Journal section must become a real blog system.
+
+Create:
+
+/blog
+
+and dynamic blog pages:
+
+/blog/[slug]
+
+Every blog card must be clickable.
+
+Clicking:
+
+"Read Article →"
+
+must open the actual article page.
+
+Do not leave blog cards as decorative elements.
+
+==================================================
+9. BLOG IMAGES MUST MATCH THE ARTICLE
+==================================================
+
+Every blog must have a relevant image.
+
+Do NOT use random product images for unrelated articles.
+
+Blog imagery should visually communicate the article topic.
+
+For example:
+
+Article:
+"How to Build a Simple Skincare Routine"
+
+Use a skincare/routine visual.
+
+Article:
+"How to Choose Personal Care Products"
+
+Use personal-care/product-selection imagery.
+
+Article:
+"Why Everyday Self-Care Matters"
+
+Use a self-care/lifestyle visual.
+
+Article:
+"Simple Hair Care Habits for Healthier Hair"
+
+Use a hair-care visual.
+
+Article:
+"Understanding Ingredients in Your Skincare"
+
+Use skincare ingredient imagery.
+
+Article:
+"Building a Wellness Routine That Fits Your Day"
+
+Use wellness/lifestyle imagery.
+
+The image should support the content, not simply fill space.
+
+==================================================
+10. BLOG PAGE
+==================================================
+
+Create a premium Glow Journal page:
+
+/blog
+
+Hero:
+
+THE GLOW JOURNAL
+
+Beauty, skincare, hair care and wellness insights for your everyday routine.
+
+Then show 5-6 blog cards.
+
+Each card should include:
+
+Image
+Category
+Date
+Title
+Short excerpt
+Read Article →
+
+Use a clean 3-column desktop grid.
+
+2-column tablet.
+
+1-column mobile.
+
+Cards must have hover interaction.
+
+==================================================
+11. CREATE AT LEAST 6 BLOG ARTICLES
+==================================================
+
+Create these articles:
+
+1. How to Build a Simple Skincare Routine
+
+2. How to Choose Personal Care Products for Your Routine
+
+3. Why Everyday Self-Care Matters
+
+4. Simple Hair Care Habits for Healthier Hair
+
+5. Understanding Skincare Ingredients Before You Buy
+
+6. Building a Wellness Routine That Fits Your Day
+
+At least 3 of these articles must be fully detailed.
+
+Each detailed article must contain at least 200 words.
+
+Do not create generic AI-sounding filler.
+
+Writing should feel like a real Pakistani beauty and wellness e-commerce brand.
+
+Tone:
+
+Helpful
+Simple
+Trustworthy
+Friendly
+Educational
+Easy to understand
+
+Avoid exaggerated medical claims.
+
+==================================================
+12. BLOG ARTICLE PAGE STRUCTURE
+==================================================
+
+Each article page should contain:
+
+Breadcrumb
+
+Category
+
+Published date
+
+Large hero image
+
+Article title
+
+Author:
+Glowistic Editorial Team
+
+Article content
+
+Related products where relevant
+
+Related articles
+
+CTA:
+
+"Need help choosing the right product?"
+
+[Chat on WhatsApp]
+
+Use:
+
+03445422609
+
+At the bottom:
+
+Related from Glow Journal
+
+Show 3 related blog articles.
+
+==================================================
+13. HOMEPAGE BLOG SECTION
+==================================================
+
+The homepage should include a Glow Journal section.
+
+Heading:
+
+From the Glow Journal
+
+Supporting text:
+
+Simple guides, helpful tips and everyday care inspiration.
+
+Show 3 featured articles.
+
+Each card must be clickable.
+
+Button:
+
+Explore Glow Journal →
+
+Link to:
+
+/blog
+
+==================================================
+14. ABOUT US PAGE
+==================================================
+
+Create a proper:
+
+/about
+
+page.
+
+Do not make About Us a dead navigation item.
+
+Include:
+
+Hero
+Glowistic introduction
+What we believe
+Our approach to everyday care
+Beauty + skincare + personal care + wellness
+Why customers choose Glowistic
+Customer-first approach
+WhatsApp support
+CTA
+
+Keep it premium and concise.
+
+==================================================
+15. CONTACT PAGE
+==================================================
+
+Create:
+
+/contact
+
+Include:
+
+WhatsApp
+Phone
+Email if available
+Business information
+Contact form
+
+Primary CTA:
+
+Chat on WhatsApp
+
+WhatsApp number:
+
+03445422609
+
+The contact form should have:
+
+Name
+Phone
+Email
+Message
+
+Submit button.
+
+==================================================
+16. CART MUST WORK
+==================================================
+
+Every Add to Cart button must actually work.
+
+Cart should support:
+
+Add product
+Remove product
+Increase quantity
+Decrease quantity
+Clear cart
+Subtotal
+Delivery fee
+Total
+
+Cart should persist during navigation.
+
+Use PKR currency.
+
+Example:
+
+Subtotal: Rs. 2,000
+
+Delivery:
+Free over Rs. 2,500
+
+Otherwise show applicable delivery charge if configured.
+
+==================================================
+17. CASH ON DELIVERY CHECKOUT
+==================================================
+
+Glowistic currently supports Cash on Delivery.
+
+Card payments are NOT available yet.
+
+Do NOT create fake card payment functionality.
+
+Show:
+
+✓ Cash on Delivery Available
+
+and:
+
+🔒 Card Payments Coming Soon
+
+On checkout, payment method should be:
+
+○ Cash on Delivery
+
+Do not show credit/debit card as an active option.
+
+==================================================
+18. CHECKOUT FORM
+==================================================
+
+Create a proper COD checkout.
+
+Required fields:
+
+Full Name
+Phone Number
+Email
+City
+Area
+Complete Delivery Address
+Order Notes
+
+Payment:
+
+Cash on Delivery
+
+Order summary:
+
+Product
+Quantity
+Price
+Subtotal
+Delivery
+Total
+
+CTA:
+
+Place Order
+
+Before submitting, validate all required fields.
+
+==================================================
+19. ORDER CONFIRMATION
+==================================================
+
+After successful order:
+
+Show a proper confirmation page/modal.
+
+Example:
+
+Order Received!
+
+Thank you for shopping with Glowistic.
+
+Your order has been received successfully.
+
+Our team will contact you to confirm your order and delivery details.
+
+Show:
+
+Order number
+Customer name
+Items
+Quantity
+Total
+Delivery city
+Payment method: Cash on Delivery
+
+Also show:
+
+Need help?
+
+[Chat on WhatsApp]
+
+==================================================
+20. EMAIL ORDER NOTIFICATION
+==================================================
+
+When a customer places an order, the order information must be prepared/sent to the configured business email.
+
+The email should contain:
+
+New Glowistic Order
+
+Order Number
+Customer Name
+Phone
+Email
+City
+Area
+Full Address
+Order Notes
+
+Products:
+
+Product Name
+Quantity
+Unit Price
+Subtotal
+
+Delivery Fee
+Total Amount
+
+Payment Method:
+Cash on Delivery
+
+IMPORTANT:
+
+Do not fake email sending.
+
+If the project already has an email/backend integration, connect it properly.
+
+If email credentials/backend are not configured yet, create the correct backend-ready order submission structure and clearly isolate the email configuration.
+
+Do not pretend an email was sent when no email service exists.
+
+==================================================
+21. WHATSAPP ORDER FLOW
+==================================================
+
+WhatsApp should be available throughout the website.
+
+Use:
+
+03445422609
+
+Create a floating WhatsApp button on desktop and mobile.
+
+Product pages should have:
+
+Order via WhatsApp
+
+Cart should have:
+
+Order via WhatsApp
+
+Contact page should have:
+
+Chat on WhatsApp
+
+The WhatsApp message should automatically include relevant order/product information.
+
+==================================================
+22. CARD PAYMENTS
+==================================================
+
+Card payments are coming soon.
+
+Do not integrate fake payment gateways.
+
+If a visitor clicks card payment:
+
+Show a premium modal:
+
+Card Payments Coming Soon
+
+We're working on secure online card payments.
+
+For now, you can place your order using Cash on Delivery or contact us on WhatsApp.
+
+[Chat on WhatsApp]
+
+==================================================
+23. HEADER NAVIGATION
+==================================================
+
+Keep the existing Glowistic header style.
+
+Ensure every navigation item works:
+
+Home → /
+Shop All → /shop
+Skincare → /shop/skincare
+Hair Care → /shop/hair-care
+Wellness & Health → /shop/wellness-health
+About Us → /about
+Glow Journal → /blog
+Contact → /contact
+
+Search must work.
+
+Cart icon must work.
+
+WhatsApp Help must work.
+
+==================================================
+24. UNIQUE CURSOR
+==================================================
+
+Keep the unique mouse pointer concept, but make it subtle and premium.
+
+Do not create an annoying oversized cursor.
+
+Recommended:
+
+Small custom circular cursor.
+
+On links/buttons:
+- Slight scale
+- Smooth transition
+- Subtle visual feedback
+
+On product cards:
+- Cursor changes to indicate clickability
+
+Disable/reduce custom cursor behavior on mobile devices.
+
+==================================================
+25. MOBILE RESPONSIVENESS
+==================================================
+
+The website must work properly on:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
+Especially fix the header.
+
+On mobile use:
+
+Logo
+Menu icon
+Cart
+
+Open a proper mobile navigation drawer.
+
+Do not squeeze all desktop navigation into mobile.
+
+Product grids:
+
+Desktop: 3 or 4 columns
+
+Tablet: 2 columns
+
+Mobile: 1 column
+
+Blog:
+
+Desktop: 3 columns
+
+Tablet: 2 columns
+
+Mobile: 1 column
+
+==================================================
+26. PRODUCT CARD UX
+==================================================
+
+Product cards should have clear hierarchy.
+
+Do not overload them with unnecessary information.
+
+Recommended:
+
+Image
+
+Category
+
+Product name
+
+Short benefit/description
+
+Price
+
+[Add to Cart]
+
+Use hover:
+
+Image subtle zoom
+Card lift
+Button interaction
+
+Do not create aggressive animations.
+
+==================================================
+27. RELATED PRODUCTS
+==================================================
+
+On every product detail page show:
+
+You May Also Like
+
+Display 3-4 related products from the same category.
+
+These must also be clickable.
+
+==================================================
+28. BREADCRUMBS
+==================================================
+
+Implement breadcrumbs.
+
+Example:
+
+Home / Shop / Skincare / Neem Face Wash
+
+Each breadcrumb should be clickable.
+
+==================================================
+29. SEO BASICS
+==================================================
+
+Every product page should have:
+
+Unique page title
+Meta description
+Clean slug
+
+Every blog page should have:
+
+Unique title
+Meta description
+Clean slug
+
+Use semantic headings:
+
+H1
+H2
+H3
+
+Do not duplicate H1 tags.
+
+==================================================
+30. FOOTER
+==================================================
+
+Create a complete footer.
+
+Columns:
+
+Shop
+Skincare
+Hair Care
+Wellness & Health
+Personal Care
+
+Glowistic
+About Us
+Glow Journal
+Contact
+
+Customer Care
+Shipping Policy
+Privacy Policy
+Terms & Conditions
+
+Contact
+WhatsApp
+Phone
+
+Social:
+Facebook
+Instagram
+
+Facebook:
+https://www.facebook.com/glowisticpk.store/
+
+Instagram:
+https://www.instagram.com/glowisticpk/?hl=en
+
+WhatsApp:
+03445422609
+
+Website:
+www.glowisticpk.com
+
+==================================================
+31. POLICIES
+==================================================
+
+Create:
+
+/privacy-policy
+/terms-conditions
+/shipping-policy
+
+DO NOT create Return & Refund Policy.
+
+Glowistic's current model is:
+
+Customers place an order and Glowistic delivers the order.
+
+Shipping policy should clearly explain:
+
+Cash on Delivery
+Delivery process
+Customer contact/confirmation
+Delivery timelines
+Shipping charges
+Free delivery threshold if applicable
+Incorrect/incomplete address responsibility
+Order cancellation/contact process
+
+Do not invent unsupported promises.
+
+==================================================
+32. IMPORTANT: DO NOT INVENT PRODUCT INFORMATION
+==================================================
+
+Only use product information that is already available in the provided project/assets/content.
+
+If a specific product's:
+- Price
+- Ingredients
+- Benefits
+- Description
+- Availability
+
+is missing, do not fabricate medical or product claims.
+
+Use only verified information.
+
+==================================================
+33. FINAL UX TEST
+==================================================
+
+After implementation, test the complete user journey:
+
+Homepage
+↓
+Shop
+↓
+Category
+↓
+Product
+↓
+Add to Cart
+↓
+Cart
+↓
+Checkout
+↓
+COD
+↓
+Order Confirmation
+
+Also test:
+
+Homepage
+↓
+Glow Journal
+↓
+Blog
+↓
+Blog Article
+↓
+Related Article
+
+Also test:
+
+Header
+↓
+Skincare
+↓
+Product
+
+Header
+↓
+Hair Care
+↓
+Product
+
+Header
+↓
+Wellness & Health
+↓
+Product
+
+Also test:
+
+WhatsApp button
+Product WhatsApp
+Cart WhatsApp
+Contact WhatsApp
+
+==================================================
+34. CRITICAL QUALITY RULE
+==================================================
+
+Do not just make the buttons look functional.
+
+Every visible interactive element must actually work.
+
+No dead links.
+
+No fake buttons.
+
+No "Coming Soon" for functionality that already exists.
+
+No broken routes.
+
+No empty product grids.
+
+No placeholder images.
+
+No unrelated blog images.
+
+No duplicated product information.
+
+No console errors.
+
+No broken mobile layouts.
+
+Preserve the existing Glowistic visual identity while making the website feel like a polished, production-ready Pakistani beauty and wellness e-commerce store.
+
+Before finishing, perform a complete route and interaction audit and fix any broken functionality you find.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-04T17:48:42-07:00.
+
+The user has uploaded 4 image(s):
+- C:/Users/ASAD/.gemini/antigravity/brain/c8d4299b-53ab-4d72-844c-fcb2e1e55021/.user_uploaded/media_1788569156751.png
+- C:/Users/ASAD/.gemini/antigravity/brain/c8d4299b-53ab-4d72-844c-fcb2e1e55021/.user_uploaded/media_1788569169031.png
+- C:/Users/ASAD/.gemini/antigravity/brain/c8d4299b-53ab-4d72-844c-fcb2e1e55021/.user_uploaded/media_1788569175008.png
+- C:/Users/ASAD/.gemini/antigravity/brain/c8d4299b-53ab-4d72-844c-fcb2e1e55021/.user_uploaded/media_1788569221130.png
+You can embed these images in an artifact if you need the USER to review them.
+</ADDITIONAL_METADATA>
