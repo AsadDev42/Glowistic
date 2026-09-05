@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2" />
+      <stop offset="100%" stop-color="#F2EAE1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgG)" />
+  <circle cx="400" cy="210" r="64" fill="#500F17" fill-opacity="0.08" />
+  <path d="M380 230 L395 190 L410 215 L420 200 L435 230 Z" fill="#500F17" fill-opacity="0.4" />
+  <circle cx="390" cy="185" r="8" fill="#D4AF37" />
+  <text x="400" y="310" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="600" fill="#500F17" text-anchor="middle">The Glow Journal</text>
+  <text x="400" y="338" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#8C7A7B" text-anchor="middle" letter-spacing="1.5">EVERYDAY CARE &amp; ROUTINE GUIDES</text>
+</svg>

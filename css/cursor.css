@@ -1,0 +1,100 @@
+/* ==========================================================================
+   GLOWISTIC - Premium Custom Desktop Cursor
+   Brand: Glowistic (www.glowisticpk.com)
+   ========================================================================== */
+
+/* Custom Cursor active only on fine-pointer desktop devices */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  body {
+    cursor: default;
+  }
+
+  /* Central Precision Dot */
+  .glowistic-cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    margin: -3px 0 0 -3px;
+    background-color: #500F17;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    will-change: transform, opacity;
+    opacity: 0;
+    transform: translate3d(-100px, -100px, 0);
+    transition: opacity 0.2s ease, width 0.2s cubic-bezier(0.16, 1, 0.3, 1), height 0.2s cubic-bezier(0.16, 1, 0.3, 1), margin 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+  }
+
+  /* Subtle Outer Ring */
+  .glowistic-cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    border: 1.25px solid rgba(80, 15, 23, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999998;
+    will-change: transform, opacity, width, height;
+    opacity: 0;
+    transform: translate3d(-100px, -100px, 0);
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                height 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                margin 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.25s ease,
+                background-color 0.25s ease,
+                opacity 0.2s ease;
+  }
+
+  /* When cursor is actively visible inside the viewport */
+  .glowistic-cursor-dot.is-visible,
+  .glowistic-cursor-ring.is-visible {
+    opacity: 1;
+  }
+
+  /* Hover state: Ring expands gracefully with subtle fill */
+  .glowistic-cursor-ring.is-hovered {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    border-color: rgba(80, 15, 23, 0.55);
+    background-color: rgba(80, 15, 23, 0.04);
+  }
+
+  .glowistic-cursor-dot.is-hovered {
+    background-color: #731A24;
+    width: 5px;
+    height: 5px;
+    margin: -2.5px 0 0 -2.5px;
+  }
+
+  /* Active / Click state: Ring contracts slightly */
+  .glowistic-cursor-ring.is-active {
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border-color: rgba(80, 15, 23, 0.7);
+    background-color: rgba(80, 15, 23, 0.12);
+  }
+
+  /* Hidden when mouse leaves window */
+  .glowistic-cursor-dot.is-hidden,
+  .glowistic-cursor-ring.is-hidden {
+    opacity: 0 !important;
+  }
+}
+
+/* Strictly disabled on touch devices, small viewports, or coarse pointers */
+@media (max-width: 1023px), (hover: none), (pointer: coarse) {
+  .glowistic-cursor-dot,
+  .glowistic-cursor-ring {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}

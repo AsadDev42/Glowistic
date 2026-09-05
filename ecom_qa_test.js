@@ -1,12 +1,12 @@
-﻿const path = require('path');
+const path = require('path');
 const storeDir = 'C:\\Users\\ASAD\\.gemini\\antigravity\\scratch\\glowistic-store';
 
 console.log('=== GLOWISTIC E-COMMERCE & LOGIC QA AUDIT ===');
 
 // 1. Test Products Data
-const { products, getAllProducts, getProductById, getProductsByCategory, getFeaturedProducts } = require(path.join(storeDir, 'js/data/products.js'));
+const { PRODUCTS, getAllProducts, getProductById, getProductsByCategory, getFeaturedProducts } = require(path.join(storeDir, 'js/data/products.js'));
 
-console.log('Total Products:', products ? products.length : 'undefined');
+console.log('Total Products:', PRODUCTS ? PRODUCTS.length : 'undefined');
 const all = getAllProducts();
 console.log('getAllProducts count:', all.length);
 
@@ -23,7 +23,8 @@ all.forEach(p => {
 console.log('Product Data Integrity Issues:', prodIssues);
 
 // 2. Test Articles Data
-const { articles, getAllArticles, getArticleBySlug } = require(path.join(storeDir, 'js/data/articles.js'));
+const { GLOW_ARTICLES, getAllArticles, getArticleBySlug } = require(path.join(storeDir, 'js/data/articles.js'));
+const articles = GLOW_ARTICLES || getAllArticles();
 console.log('\nTotal Articles:', articles.length);
 let artIssues = 0;
 articles.forEach(a => {
@@ -60,7 +61,7 @@ const mockOrder = {
   createdAt: new Date().toISOString()
 };
 
-emailService.sendOrderConfirmation(mockOrder).then(res => {
+emailService.sendOrderNotification(mockOrder).then(res => {
   console.log('Email Service Response:', res);
 }).catch(err => {
   console.error('Email Service Error:', err);

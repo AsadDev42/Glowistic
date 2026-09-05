@@ -60,7 +60,7 @@ function renderProductCard(p) {
 }
 
 function renderBlogCard(a) {
-  const imgUrl = `/${a.image.replace(/^\//, '')}`;
+  const imgUrl = a.image.replace(/^\//, '');
   const altText = a.alt || a.title;
   return `
     <article class="blog-card blog-home-card" data-category="${a.category}" data-id="${a.id}" data-slug="${a.slug}" onclick="if(!event.target.closest('a')){window.location.href='article.html?slug=${a.slug}';}" onkeydown="if(event.key==='Enter'||event.key===' '){window.location.href='article.html?slug=${a.slug}';}" role="link" tabindex="0" aria-label="Read article: ${a.title}">
@@ -546,14 +546,14 @@ console.log('Building all pages...');
           <!-- Main Image Card -->
           <div class="pdp-main-image-card" id="main-image-card">
             <span id="product-detail-badge" class="pdp-badge-pill ${p.badgeType === 'gold' ? 'badge-gold' : 'badge-burgundy'}" style="${p.badge ? '' : 'display:none;'}">${p.badge || ''}</span>
-            <img id="product-main-image" src="/${p.image.replace(/^\//, '')}" alt="${p.name}" class="pdp-main-image" onerror="this.src='assets/products/oclear-serum.jpg'" />
+            <img id="product-main-image" src="${p.image.replace(/^\//, '')}" alt="${p.name}" class="pdp-main-image" onerror="this.src='assets/products/oclear-serum.jpg'" />
           </div>
 
           <!-- Thumbnails -->
           <div id="product-gallery-thumbnails" class="pdp-thumbnails-wrap">
             ${(p.gallery && p.gallery.length > 0 ? p.gallery : [p.image]).map((gImg, gIdx) => `
-            <button type="button" class="pdp-thumb-btn ${gIdx === 0 ? 'is-active' : ''}" data-src="/${gImg.replace(/^\//, '')}" aria-label="${p.name} View ${gIdx + 1}">
-              <img src="/${gImg.replace(/^\//, '')}" alt="${p.name} Thumbnail ${gIdx + 1}" onerror="this.src='assets/products/placeholder.jpg'" />
+            <button type="button" class="pdp-thumb-btn ${gIdx === 0 ? 'is-active' : ''}" data-src="${gImg.replace(/^\//, '')}" aria-label="${p.name} View ${gIdx + 1}">
+              <img src="${gImg.replace(/^\//, '')}" alt="${p.name} Thumbnail ${gIdx + 1}" onerror="this.src='assets/products/placeholder.jpg'" />
             </button>`).join('\n')}
           </div>
 
@@ -986,8 +986,8 @@ console.log('Building all pages...');
           }
         </style>
         <div style="height: 360px; overflow: hidden; background: #FAF7F2;">
-          <a href="/blog/${topArticle.slug}">
-            <img id="featured-banner-img" src="/${topArticle.image.replace(/^\//, '')}" alt="${topArticle.alt || topArticle.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onerror="this.onerror=null; this.src='assets/blog/fallback-blog.svg';" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'" />
+          <a href="article.html?slug=${topArticle.slug}">
+            <img id="featured-banner-img" src="${topArticle.image.replace(/^\//, '')}" alt="${topArticle.alt || topArticle.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onerror="this.onerror=null; this.src='assets/blog/fallback-blog.svg';" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'" />
           </a>
         </div>
         <div style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
@@ -996,7 +996,7 @@ console.log('Building all pages...');
             <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Featured Guide</span>
           </div>
           <h2 style="font-size: 1.85rem; line-height: 1.25; margin-bottom: 14px; font-family: var(--font-serif); font-weight: 600;">
-            <a id="featured-banner-title-link" href="/blog/${topArticle.slug}" style="color: var(--color-heading); text-decoration: none;">
+            <a id="featured-banner-title-link" href="article.html?slug=${topArticle.slug}" style="color: var(--color-heading); text-decoration: none;">
               ${topArticle.title}
             </a>
           </h2>
@@ -1004,7 +1004,7 @@ console.log('Building all pages...');
             ${topArticle.excerpt}
           </p>
           <div>
-            <a id="featured-banner-cta-btn" href="/blog/${topArticle.slug}" class="btn btn-primary">Read Complete Guide &rarr;</a>
+            <a id="featured-banner-cta-btn" href="article.html?slug=${topArticle.slug}" class="btn btn-primary">Read Complete Guide &rarr;</a>
           </div>
         </div>
       </div>
@@ -1117,7 +1117,7 @@ console.log('Building all pages...');
 
       <!-- Featured Hero Image -->
       <div style="max-width: 920px; margin: 0 auto 48px; border-radius: 16px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); aspect-ratio: 16/10; background: #FAF7F2;">
-        <img id="article-featured-img" src="/${a.image.replace(/^\//, '')}" alt="${a.alt || a.title}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null; this.src='assets/blog/fallback-blog.svg';" />
+        <img id="article-featured-img" src="${a.image.replace(/^\//, '')}" alt="${a.alt || a.title}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.onerror=null; this.src='assets/blog/fallback-blog.svg';" />
       </div>
 
       <!-- Article Layout: Content + Desktop Sidebar -->
@@ -1190,8 +1190,8 @@ console.log('Building all pages...');
             </h4>
             <div id="article-sidebar-related">
               ${GLOW_ARTICLES.slice(1, 4).map(art => `
-                <a href="/blog/${art.slug}" style="display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--color-border);">
-                  <img src="/${art.image.replace(/^\//, '')}" alt="${art.alt || art.title}" style="width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 1px solid var(--color-border);" onerror="this.onerror=null; this.src='assets/blog/fallback-blog.svg';" />
+                <a href="article.html?slug=${art.slug}" style="display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--color-border);">
+                  <img src="${art.image.replace(/^\//, '')}" alt="${art.alt || art.title}" style="width: 64px; height: 64px; object-fit: cover; border-radius: 8px; border: 1px solid var(--color-border);" onerror="this.onerror=null; this.src='assets/blog/fallback-blog.svg';" />
                   <div>
                     <span style="font-size: 0.7rem; color: var(--color-primary); font-weight: 600; text-transform: uppercase;">${art.category}</span>
                     <h5 style="font-size: 0.85rem; color: var(--color-heading); margin: 2px 0 0; line-height: 1.35; font-weight: 600;">${art.title}</h5>
@@ -1911,6 +1911,82 @@ console.log('Building all pages...');
 
   fs.writeFileSync(path.join(projectDir, 'confirmation.html'), `${head}\n<body data-page="confirmation">\n${header}\n${body}\n${footer}`, 'utf8');
   console.log('✓ Compiled confirmation.html');
+}
+
+// ==========================================
+// 11. 404 (404.html for GitHub Pages fallback & routing)
+// ==========================================
+{
+  const head = getHead(
+    'Page Not Found | Glowistic',
+    'The requested page could not be found on Glowistic.',
+    '404',
+    null
+  );
+
+  const header = getHeader('404');
+  const footer = getFooter('404');
+
+  const body = `
+  <!-- GITHUB PAGES SPA REDIRECT SCRIPT -->
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var clean = path.replace(/\\/$/, '');
+      var parts = clean.split('/').filter(Boolean);
+      var last = parts[parts.length - 1] || '';
+      var secondLast = parts[parts.length - 2] || '';
+      
+      var routeMap = {
+        'shop': 'shop.html',
+        'about': 'about.html',
+        'blog': 'blog.html',
+        'contact': 'contact.html',
+        'cart': 'cart.html',
+        'checkout': 'checkout.html',
+        'confirmation': 'confirmation.html',
+        'shipping-policy': 'shipping-policy.html',
+        'privacy-policy': 'privacy-policy.html',
+        'terms-and-conditions': 'terms-and-conditions.html',
+        'terms-conditions': 'terms-conditions.html'
+      };
+
+      if (routeMap[last]) {
+        window.location.replace(routeMap[last] + window.location.search + window.location.hash);
+        return;
+      }
+
+      if (secondLast === 'product' && last) {
+        window.location.replace('product.html?slug=' + encodeURIComponent(last) + (window.location.hash || ''));
+        return;
+      }
+
+      if (secondLast === 'blog' && last) {
+        window.location.replace('article.html?slug=' + encodeURIComponent(last) + (window.location.hash || ''));
+        return;
+      }
+    })();
+  </script>
+
+  <main class="section-padding" style="min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div class="container" style="max-width: 600px;">
+      <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 16px; padding: 48px 32px; box-shadow: var(--shadow-sm);">
+        <span style="font-size: 3.5rem; display: block; margin-bottom: 16px;">✨</span>
+        <h1 style="font-size: 2.25rem; color: var(--color-primary); margin-bottom: 12px; font-family: var(--font-serif);">Page Not Found</h1>
+        <p style="font-size: 1rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 32px;">
+          The page you are looking for does not exist or has moved. Explore our curated beauty, skincare, and wellness essentials below.
+        </p>
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="shop.html" class="btn btn-primary btn-lg" style="min-width: 180px;">Shop Catalog</a>
+          <a href="index.html" class="btn btn-outline btn-lg" style="min-width: 180px;">Go to Home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  `;
+
+  fs.writeFileSync(path.join(projectDir, '404.html'), `${head}\n<body data-page="404">\n${header}\n${body}\n${footer}`, 'utf8');
+  console.log('✓ Compiled 404.html');
 }
 
 console.log('All pages built successfully!');
