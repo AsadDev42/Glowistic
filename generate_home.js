@@ -84,7 +84,7 @@ const body = `
       </div>
       <div class="hero-media">
         <div class="hero-visual-card">
-          <img src="assets/products/oclear-serum.jpg" alt="Glowistic O'Clear Acne Clear Serum" class="hero-featured-img" />
+          <img src="assets/products/oclear-serum.jpg" alt="Glowistic O'Clear Acne Clear Serum" class="hero-featured-img" fetchpriority="high" decoding="async" width="540" height="540" />
           <div class="hero-floating-card">
             <div class="hero-floating-info">
               <span class="badge badge-gold">Featured Essential</span>

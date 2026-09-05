@@ -32,6 +32,11 @@ function getHead(title, desc, canonicalPath = '', schemaObj = null, ogImage = 'a
   <meta name="twitter:description" content="${desc}" />
   <meta name="twitter:image" content="${fullOgImage}" />
 
+  <!-- Performance & Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" />
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/components.css" />

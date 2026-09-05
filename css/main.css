@@ -2,9 +2,7 @@
    GLOWISTIC - Premium E-Commerce Stylesheet
    Brand: Glowistic (www.glowisticpk.com)
    ========================================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-
+/* Font loaded via high-priority preconnected <link> in HTML head */
 :root {
   /* Brand Core Colors */
   --color-primary: #500F17;
@@ -1428,6 +1426,8 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid rgba(254, 246, 225, 0.1);
   position: relative;
   z-index: 10;
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
 }
 
 .footer-container {
