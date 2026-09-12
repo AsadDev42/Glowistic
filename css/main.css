@@ -807,6 +807,48 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.hero-image-wrapper {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(80, 15, 23, 0.08);
+  box-shadow: 0 20px 45px -15px rgba(80, 15, 23, 0.12);
+  background: #F8ECEE;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.hero-main-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: inherit;
+  display: block;
+}
+
+.hero-trust-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #3A3530;
+}
+
+.trust-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
 .hero-visual-card {
   position: relative;
   background: var(--color-bg);
@@ -1770,7 +1812,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .category-visual-media {
-  height: 200px;
+  aspect-ratio: 16 / 9;
   position: relative;
   background-color: var(--color-bg);
   overflow: hidden;
@@ -1829,7 +1871,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 580px) {
   .category-visual-grid { grid-template-columns: 1fr; }
-  .category-visual-media { height: 180px; }
 }
 
 /* -------------------------------------------------------------

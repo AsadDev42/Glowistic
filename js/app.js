@@ -403,7 +403,7 @@ function buildProductCard(product) {
 
   return `
     <article class="product-card" data-id="${product.id}" data-slug="${product.slug || product.id}" data-category="${product.category}" data-price="${product.price}" data-name="${product.name}" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; position: relative;">
-      <div class="product-card-media" style="position: relative; height: 220px; overflow: hidden; background: #FAF7F2;">
+      <div class="product-card-media" style="position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #FAF7F2;">
         <a href="product.html?slug=${product.slug || product.id}" class="product-card-img-link" aria-label="${product.name}" style="display: block; width: 100%; height: 100%;">
           <img src="${product.image.replace(/^\//, '')}" alt="${product.name}" class="product-card-img" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onerror="this.src='assets/products/placeholder.jpg'" />
         </a>

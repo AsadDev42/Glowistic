@@ -1,39 +1,38 @@
 /**
- * GLOWISTIC - Official Verified Product Catalog
- * Brand: Glowistic (www.glowisticpk.com)
- * All packaging details, labels, colors, and ingredients preserved exactly as manufactured.
+ * GLOWISTIC - Product Catalog
+ * Synced from the supplied product detail PDF and product image ZIP.
  */
 
 export const CATEGORIES = [
   {
     "id": "all",
     "name": "All Products",
-    "count": 9
+    "count": 21
   },
   {
     "id": "skincare",
     "name": "Skincare",
-    "count": 2
+    "count": 4
   },
   {
     "id": "haircare",
     "name": "Hair Care",
-    "count": 3
+    "count": 6
   },
   {
     "id": "personalcare",
     "name": "Personal Care",
-    "count": 1
+    "count": 8
   },
   {
     "id": "bodycare",
     "name": "Body Care",
-    "count": 1
+    "count": 4
   },
   {
     "id": "wellness",
     "name": "Wellness",
-    "count": 2
+    "count": 4
   },
   {
     "id": "supplements",
@@ -44,620 +43,1482 @@ export const CATEGORIES = [
 
 export const PRODUCTS = [
   {
-    "id": "oclear-acne-serum",
-    "name": "O'Clear Acne Clear Serum",
-    "subtitle": "Tea Tree Oil & Salicylic Acid",
-    "tagline": "Clear Skin. Boost Confidence.",
-    "category": "skincare",
-    "categoryName": "Skincare",
-    "price": 1450,
-    "originalPrice": 1750,
-    "salePrice": 1450,
-    "onSale": true,
-    "rating": 4.9,
-    "reviewCount": 128,
-    "image": "assets/products/oclear-serum.jpg",
-    "gallery": [
-      "assets/products/oclear-serum.jpg",
-      "assets/products/oclear-serum-botanical.jpg",
-      "assets/products/oclear-serum-clinical.jpg",
-      "assets/products/oclear-serum-flatlay.jpg"
-    ],
-    "badge": "Bestseller",
-    "badgeType": "gold",
-    "volume": "30 ml e",
-    "inStock": true,
-    "stockCount": 45,
-    "sku": "GLW-SKN-001",
-    "shortDesc": "A powerful purifying blend that targets acne, calms redness, and gently exfoliates for a clear, healthy glow.",
-    "description": "O'Clear Acne Clear Serum is an advanced, targeted dermatological formula blending natural Tea Tree Oil with clinically proven Salicylic Acid. Designed for all skin types—especially acne-prone and sensitive skin—it gently unclogs pores, soothes inflammation, and restores your natural healthy barrier.",
-    "features": [
-      "Fights Acne: Helps reduce active breakouts and prevents future clogged pores.",
-      "Soothes & Calms: Botanical Tea Tree Oil calms redness and irritation.",
-      "Clearer, Healthier Skin: Salicylic Acid gently exfoliates and refines skin texture.",
-      "Dermatologically Tested, Paraben-Free, Sulfate-Free & Cruelty-Free.",
-      "For All Skin Types, especially acne-prone skin."
-    ],
-    "ingredients": "Aqua, Butylene Glycol, Salicylic Acid, Niacinamide, Betaine, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Cellulose, Panthenol, Glycerin, Allantoin, Boswellia Serrata Resin Extract, Vitamin E, Sodium Hyaluronate.",
-    "howToUse": "Cleanse face thoroughly (ideally with Glowistic Neem Face Wash). Apply 3-4 drops of O'Clear Serum directly onto face and neck. Gently pat into skin until fully absorbed. Use daily, morning and night, followed by your favorite moisturizer.",
-    "idealFor": "Acne-prone skin, blemishes, blackheads, excess sebum, and uneven skin texture.",
-    "importantNotes": "For external cosmetic use only. Avoid direct contact with eyes. Patch test on a small area of the jawline prior to first application. Store in a cool, dry place below 25°C away from direct sunlight.",
-    "faqs": [
-      {
-        "q": "Can I use O'Clear Serum both morning and evening?",
-        "a": "Yes, you can apply 3-4 drops after cleansing in the morning and evening, followed by your regular moisturizer and sunscreen during daytime."
-      },
-      {
-        "q": "Is this serum suitable for sensitive or acne-prone skin?",
-        "a": "Yes, it is dermatologically formulated for all skin types and specifically optimized for acne-prone and sensitive skin."
-      },
-      {
-        "q": "How does Cash on Delivery work for this order?",
-        "a": "You can place your order online without advance payment and pay the courier cash upon delivery anywhere in Pakistan."
-      }
-    ],
-    "slug": "o-clear-acne-clear-serum",
-    "shortDescription": "A powerful purifying blend that targets acne, calms redness, and gently exfoliates for a clear, healthy glow.",
-    "benefits": [
-      "Fights Acne: Helps reduce active breakouts and prevents future clogged pores.",
-      "Soothes & Calms: Botanical Tea Tree Oil calms redness and irritation.",
-      "Clearer, Healthier Skin: Salicylic Acid gently exfoliates and refines skin texture.",
-      "Dermatologically Tested, Paraben-Free, Sulfate-Free & Cruelty-Free.",
-      "For All Skin Types, especially acne-prone skin."
-    ],
-    "availability": "In Stock",
-    "featured": true,
-    "tags": [
-      "skincare",
-      "serum",
-      "acne",
-      "tea tree",
-      "salicylic acid",
-      "bestseller"
-    ]
-  },
-  {
-    "id": "neem-face-wash",
-    "name": "Neem Face Wash",
-    "subtitle": "Purifying Cleanser for Clear, Acne-Free Skin",
-    "tagline": "Purifies & Deep Cleanses Everyday.",
-    "category": "skincare",
-    "categoryName": "Skincare",
-    "price": 650,
-    "originalPrice": 750,
-    "salePrice": 650,
-    "onSale": true,
-    "rating": 4.8,
-    "reviewCount": 94,
-    "image": "assets/products/neem-facewash.jpg",
-    "gallery": [
-      "assets/products/neem-facewash.jpg",
-      "assets/products/neem-facewash-studio.jpg",
-      "assets/products/neem-facewash-texture.jpg"
-    ],
-    "badge": "Clean Routine",
-    "badgeType": "green",
-    "volume": "60 ml e",
-    "inStock": true,
-    "stockCount": 80,
-    "sku": "GLW-SKN-002",
-    "shortDesc": "Purifying gentle cleanser infused with organic neem extracts to eliminate impurities and balance oils.",
-    "description": "Glowistic Neem Face Wash is a gentle yet potent everyday cleanser that deeply purifies your pores without stripping essential moisture. Neem is legendary for its natural antibacterial properties, washing away daily pollutants, environmental impurities, and excess oil.",
-    "features": [
-      "Purifies & Deep Cleanses: Lifts away deep-seated dirt, pollution, and oil.",
-      "Fights Acne & Blemishes: Natural antibacterial neem helps keep skin clear.",
-      "Gentle & Non-Drying: Leaves skin refreshed, balanced, and soft.",
-      "Everyday essential suitable for all family members."
-    ],
-    "ingredients": "Pure Neem Extract, Aqua, Decyl Glucoside, Glycerin, Aloe Vera Leaf Juice, Tea Tree Essential Oil, Vitamin E, Citric Acid.",
-    "howToUse": "Moisten face and neck. Apply a small quantity of Neem Face Wash and gently work up a lather using a circular motion. Wash off and pat dry. Use twice daily.",
-    "idealFor": "Daily facial cleansing, oily to normal skin, teenagers and adults fighting everyday blemishes.",
-    "importantNotes": "For external facial cleansing only. If irritation occurs, rinse thoroughly with fresh water and discontinue use. Store at room temperature away from direct sunlight.",
-    "faqs": [
-      {
-        "q": "How many times a day should I use Neem Face Wash?",
-        "a": "For best results, use twice daily — once in the morning and once before bedtime."
-      },
-      {
-        "q": "Does it strip or dry out the skin?",
-        "a": "No, its gentle non-drying formula with pure neem extract and aloe vera cleanses deeply while preserving natural moisture."
-      },
-      {
-        "q": "Is Cash on Delivery available?",
-        "a": "Yes, Cash on Delivery is available across all cities and towns in Pakistan."
-      }
-    ],
-    "slug": "neem-face-wash",
-    "shortDescription": "Purifying gentle cleanser infused with organic neem extracts to eliminate impurities and balance oils.",
-    "benefits": [
-      "Purifies & Deep Cleanses: Lifts away deep-seated dirt, pollution, and oil.",
-      "Fights Acne & Blemishes: Natural antibacterial neem helps keep skin clear.",
-      "Gentle & Non-Drying: Leaves skin refreshed, balanced, and soft.",
-      "Everyday essential suitable for all family members."
-    ],
-    "availability": "In Stock",
-    "featured": true,
-    "tags": [
-      "skincare",
-      "face wash",
-      "cleanser",
-      "neem",
-      "purifying",
-      "daily care"
-    ]
-  },
-  {
-    "id": "reroot-onion-rosemary-shampoo",
-    "name": "reroot® Onion + Rosemary Anti-Hairfall Shampoo",
-    "subtitle": "Strengthening & Thickening Botanical Cleanse",
-    "tagline": "Fortify Your Roots Naturally.",
-    "category": "haircare",
-    "categoryName": "Hair Care",
-    "price": 1250,
-    "originalPrice": 1500,
-    "salePrice": 1250,
-    "onSale": true,
-    "rating": 4.9,
-    "reviewCount": 156,
-    "image": "assets/products/reroot-shampoo.jpg",
-    "gallery": [
-      "assets/products/reroot-shampoo.jpg"
-    ],
-    "badge": "Trending",
-    "badgeType": "burgundy",
-    "volume": "250 ml",
-    "inStock": true,
-    "stockCount": 60,
-    "sku": "GLW-HAR-001",
-    "shortDesc": "0% Parabens, Sulphates, Silicones. Powered by pure red onion & rosemary extracts for dense, thick hair.",
-    "description": "reroot® Onion + Rosemary Anti-Hairfall Shampoo is an intensive botanical formulation crafted to reduce hair shedding, strengthen weak follicles, and stimulate natural root vitality. Free from harsh sulphates and silicones, it gently cleanses the scalp while delivering essential nutrients.",
-    "features": [
-      "0% Parabens, Sulphates, Silicones: Pure, non-stripping scalp care.",
-      "Strengthening & Thickening: Red Onion extract rich in sulphur promotes collagen production.",
-      "Rosemary Essential Oil: Known to stimulate scalp circulation and awaken dormant follicles.",
-      "For All Hair Types: Safe for color-treated, chemically processed, and sensitive scalps."
-    ],
-    "ingredients": "Red Onion Seed Oil Extract, Rosemary Leaf Extract, Biotin, Plant Keratin, Aqua, Sodium Lauroyl Sarcosinate, Cocamidopropyl Betaine, Vitamin B5, Argan Oil.",
-    "howToUse": "Wet hair thoroughly with warm water. Take an adequate amount of shampoo and massage gently into scalp and hair strands for 2-3 minutes. Rinse thoroughly with cool water.",
-    "idealFor": "Excessive hair fall, thinning hair, weak roots, and brittle strands.",
-    "importantNotes": "Free from parabens, sulphates, and silicones. Avoid direct contact with eyes; rinse immediately with clean water if contact occurs. Store in a cool, dry place.",
-    "faqs": [
-      {
-        "q": "Is this shampoo safe for daily use and colored hair?",
-        "a": "Yes, the 0% sulphate and paraben formula is gentle enough for daily cleansing and safe for color-treated hair."
-      },
-      {
-        "q": "How should I apply it for best results?",
-        "a": "Massage into wet scalp and hair strands for 2-3 minutes to allow botanical actives to penetrate, then rinse with cool water."
-      },
-      {
-        "q": "What are the delivery charges?",
-        "a": "Orders of Rs. 2,500 or more receive FREE Delivery; otherwise standard nationwide COD delivery is Rs. 200."
-      }
-    ],
-    "slug": "reroot-onion-rosemary-shampoo",
-    "shortDescription": "0% Parabens, Sulphates, Silicones. Powered by pure red onion & rosemary extracts for dense, thick hair.",
-    "benefits": [
-      "0% Parabens, Sulphates, Silicones: Pure, non-stripping scalp care.",
-      "Strengthening & Thickening: Red Onion extract rich in sulphur promotes collagen production.",
-      "Rosemary Essential Oil: Known to stimulate scalp circulation and awaken dormant follicles.",
-      "For All Hair Types: Safe for color-treated, chemically processed, and sensitive scalps."
-    ],
-    "availability": "In Stock",
-    "featured": false,
-    "tags": [
-      "hair care",
-      "shampoo",
-      "anti-hairfall",
-      "onion",
-      "rosemary"
-    ]
-  },
-  {
-    "id": "reroot-hair-growth-pack",
-    "name": "reroot® Hair Growth Spray & Tablets Pack",
-    "subtitle": "One-Month Hair Strengthening Course",
-    "tagline": "Complete Dual-Action Follicle Regrowth System.",
-    "category": "haircare",
-    "categoryName": "Hair Care",
-    "price": 2850,
-    "originalPrice": 3400,
-    "salePrice": 2850,
-    "onSale": true,
-    "rating": 5,
-    "reviewCount": 88,
-    "image": "assets/products/reroot-growth-pack.jpg",
-    "gallery": [
-      "assets/products/reroot-growth-pack.jpg"
-    ],
-    "badge": "Complete Course",
-    "badgeType": "gold",
-    "volume": "1x 60ml Spray + 2x 60 Tablets",
-    "inStock": true,
-    "stockCount": 35,
-    "sku": "GLW-HAR-002",
-    "shortDesc": "Comprehensive inside-out hair therapy combining targeted topical spray with rich nutraceutical tablets.",
-    "description": "The reroot® Hair Growth Pack is a powerful, synergistic 1-month treatment combining external topical nourishment and internal cellular nutrition. The active herbal spray stimulates follicles directly at the scalp surface, while the nutraceutical tablets replenish key micronutrients.",
-    "features": [
-      "Dual-Action Therapy: 1x 60ml intensive scalp spray + 2x 60 nutraceutical tablets.",
-      "One-Month Hair Strengthening Course: Formulated for visible density improvements.",
-      "Nourishes Roots Internally: Fortified with Biotin, Zinc, Iron, and Vitamin Complex.",
-      "Stimulates Growth Externally: Herbal peptide spray activates dormant hair follicles."
-    ],
-    "ingredients": "Spray: Rosemary Hydrosol, Redensyl, Procapil, Onion Extract, Caffeine, Aqua. Tablets: Biotin 5000mcg, Zinc Sulphate, Folic Acid, Vitamin E, Keratin Hydrolysate, Iron, Marine Collagen.",
-    "howToUse": "Spray: Apply 4-5 sprays directly onto dry scalp twice daily, gently massaging with fingertips. Tablets: Take 1 tablet twice daily with meals or as advised by your healthcare specialist.",
-    "idealFor": "Moderate to severe hair thinning, post-stress hair shedding, receding hairlines, and slow hair growth.",
-    "importantNotes": "Spray is for topical scalp use only. Tablets are dietary nutraceuticals to be taken with meals. Do not exceed the advised daily dosage. Consult your physician if pregnant, nursing, or taking other medications.",
-    "faqs": [
-      {
-        "q": "What is included in the reroot® 1-Month Pack?",
-        "a": "You receive 1x 60ml intensive scalp spray plus 2 bottles of 60 nutraceutical tablets (120 tablets total)."
-      },
-      {
-        "q": "How do I take the tablets and spray together?",
-        "a": "Apply 4-5 sprays onto dry scalp twice daily, and take 1 tablet twice daily with meals."
-      },
-      {
-        "q": "Is this eligible for Free Delivery?",
-        "a": "Yes! At Rs. 2,850, this pack automatically qualifies for FREE Delivery across Pakistan."
-      }
-    ],
-    "slug": "reroot-hair-growth-pack",
-    "shortDescription": "Comprehensive inside-out hair therapy combining targeted topical spray with rich nutraceutical tablets.",
-    "benefits": [
-      "Dual-Action Therapy: 1x 60ml intensive scalp spray + 2x 60 nutraceutical tablets.",
-      "One-Month Hair Strengthening Course: Formulated for visible density improvements.",
-      "Nourishes Roots Internally: Fortified with Biotin, Zinc, Iron, and Vitamin Complex.",
-      "Stimulates Growth Externally: Herbal peptide spray activates dormant hair follicles."
-    ],
-    "availability": "In Stock",
-    "featured": true,
-    "tags": [
-      "hair care",
-      "hair growth",
-      "spray",
-      "tablets",
-      "biotin",
-      "combo"
-    ]
-  },
-  {
-    "id": "hair-n-scalp-shampoo-arnica",
-    "name": "Hair N Scalp Shampoo With Arnica",
-    "subtitle": "Nourishing & Strengthening Hair Therapy",
-    "tagline": "Silky, Shiny, Strong, Long & Beautiful Hair.",
-    "category": "haircare",
-    "categoryName": "Hair Care",
-    "price": 850,
-    "originalPrice": 950,
-    "salePrice": 850,
-    "onSale": true,
-    "rating": 4.7,
-    "reviewCount": 72,
-    "image": "assets/products/arnica-shampoo.jpg",
-    "gallery": [
-      "assets/products/arnica-shampoo.jpg"
-    ],
-    "badge": "Herbal Care",
-    "badgeType": "green",
-    "volume": "200 mL",
-    "inStock": true,
-    "stockCount": 50,
-    "sku": "GLW-HAR-003",
-    "shortDesc": "Free from parabens. Enriched with natural Arnica flower extracts to nourish scalp, prevent dandruff, and add silky shine.",
-    "description": "Hair N Scalp Shampoo With Arnica combines the healing properties of Arnica Montana flower extract with gentle conditioning agents. It soothes irritated, dry scalps, prevents flaky buildup, and leaves your hair with a luminous, silky softness.",
-    "features": [
-      "With Natural Arnica: Promotes healthy scalp environment and soothes itching.",
-      "Free from Parabens: Gentle, family-safe cleansing formula.",
-      "Silky, Shiny & Strong: Improves hair elasticity and manageable natural bounce.",
-      "Ideal for everyday family use across all seasons."
-    ],
-    "ingredients": "Arnica Montana Extract, Sunflower Seed Oil, Aqua, Sodium Laureth Sulfate, Cocamide DEA, Polyquaternium-7, Citric Acid, Fragrance.",
-    "howToUse": "Apply to wet hair, gently lather into scalp for 1-2 minutes, then rinse thoroughly. Safe for daily use.",
-    "idealFor": "Dull hair, dry scalp, minor flaking, and everyday gentle conditioning.",
-    "importantNotes": "Paraben-free formula. For external scalp and hair use only. Store away from excessive heat and direct sunlight.",
-    "faqs": [
-      {
-        "q": "What benefits does Arnica provide for hair?",
-        "a": "Natural Arnica extract helps soothe scalp dryness, prevent flaky buildup, and leaves hair silky and manageable."
-      },
-      {
-        "q": "Can children and the whole family use it?",
-        "a": "Yes, it is designed as a gentle family-safe shampoo for everyday routine use."
-      },
-      {
-        "q": "How fast is delivery?",
-        "a": "Parcels are delivered within 2 to 4 business days via registered couriers with Cash on Delivery."
-      }
-    ],
-    "slug": "hair-n-scalp-shampoo-arnica",
-    "shortDescription": "Free from parabens. Enriched with natural Arnica flower extracts to nourish scalp, prevent dandruff, and add silky shine.",
-    "benefits": [
-      "With Natural Arnica: Promotes healthy scalp environment and soothes itching.",
-      "Free from Parabens: Gentle, family-safe cleansing formula.",
-      "Silky, Shiny & Strong: Improves hair elasticity and manageable natural bounce.",
-      "Ideal for everyday family use across all seasons."
-    ],
-    "availability": "In Stock",
-    "featured": false,
-    "tags": [
-      "hair care",
-      "personal care",
-      "shampoo",
-      "arnica",
-      "scalp care"
-    ]
-  },
-  {
-    "id": "hema-lin-oral-liquid",
-    "name": "Hema-Lin Oral Liquid",
-    "subtitle": "Premium Iron Supplement Drinking Ampoules",
-    "tagline": "Nourish. Replenish. Thrive.",
+    "id": "addistop-21-day-slimming-plan",
+    "name": "Addistop 21-Days Slimming Plan",
+    "subtitle": "Natural Homoeopathic Weight Management Formula",
+    "tagline": "Structured 21-day wellness support.",
     "category": "wellness",
-    "categoryName": "Wellness & Supplements",
-    "price": 1850,
-    "originalPrice": 2200,
-    "salePrice": 1850,
+    "price": 799,
+    "badge": "21-Day Plan",
+    "volume": "21 Days",
+    "shortDescription": "A structured homoeopathic slimming course designed to support healthier daily weight management and overall vitality.",
+    "features": [
+      "21-Day Guided Plan: Formulated as a structured slimming course designed to support a healthier, active lifestyle.",
+      "Homoeopathic Preparation: Made with a gentle homoeopathic formula focused on wellness and balance.",
+      "Smart & Healthy Support: Helps promote fitness goals, weight management, and overall vitality without harsh additives.",
+      "Safe & Effective: Crafted to offer an accessible daily routine for weight management and healthy living goals."
+    ],
+    "ingredients": "Homoeopathic preparation.",
+    "idealFor": "Slimming support, wellness, fitness enhancement, and daily weight management routines.",
+    "categoryName": "Wellness",
+    "originalPrice": 950,
+    "salePrice": 799,
     "onSale": true,
     "rating": 4.9,
-    "reviewCount": 110,
-    "image": "assets/products/hema-lin.jpg",
+    "reviewCount": 40,
+    "image": "assets/products/addistop-21-day-slimming-plan-3.png",
     "gallery": [
-      "assets/products/hema-lin.jpg"
+      "assets/products/addistop-21-day-slimming-plan-3.png",
+      "assets/products/addistop-21-day-slimming-plan.png",
+      "assets/products/addistop-21-day-slimming-plan-2.png"
     ],
-    "badge": "Doctor Recommended",
-    "badgeType": "burgundy",
-    "volume": "10 Drinking Ampoules x 10 ml each",
+    "badgeType": "gold",
     "inStock": true,
-    "stockCount": 40,
-    "sku": "GLW-WEL-001",
-    "shortDesc": "A powerful formula to support blood health, restore iron stores, and maintain everyday energy & vitality.",
-    "description": "Hema-Lin Oral Liquid is a premium, pleasant-tasting liquid iron supplement presented in convenient ready-to-drink 10ml ampoules. Formulated for superior gastrointestinal tolerance and rapid absorption, it helps combat fatigue, restore low haemoglobin levels, and support optimal cellular energy.",
-    "features": [
-      "Healthy Haemoglobin Count: Supports optimal red blood cell formation.",
-      "Healthy Iron Stores: High-bioavailability iron gentle on the stomach.",
-      "Optimum Health & Vitality: Helps reduce tiredness, exhaustion, and daily fatigue.",
-      "Easy To Drink: Ready-to-use liquid ampoules with delicious natural berry taste.",
-      "Gentle & Effective: Non-constipating iron complex."
-    ],
-    "ingredients": "Iron (as Ferric Hydroxide Polymaltose Complex), Folic Acid, Vitamin B12, Vitamin C, Purified Water, Sorbitol, Natural Berry Essence.",
-    "howToUse": "Take 1 drinking ampoule daily during or immediately after meals, or as directed by a healthcare physician. Can be consumed directly or diluted in water/fruit juice.",
-    "idealFor": "Women, pregnant/lactating mothers, individuals with low energy, iron deficiency anemia, and busy professionals.",
-    "importantNotes": "Dietary supplement. Keep out of reach of children. Store in a cool, dry place below 25°C. Consult a healthcare professional if pregnant or under medical supervision.",
-    "faqs": [
-      {
-        "q": "How do I take Hema-Lin Drinking Ampoules?",
-        "a": "Consume 1 ampoule daily during or immediately after meals. You can drink directly or mix with water or juice."
-      },
-      {
-        "q": "Does this formula cause stomach upset?",
-        "a": "Hema-Lin uses a gentle iron complex formulated for high bioavailability and superior digestive tolerance."
-      },
-      {
-        "q": "Is Cash on Delivery supported?",
-        "a": "Yes, nationwide Cash on Delivery is available across Pakistan."
-      }
-    ],
-    "slug": "hema-lin-oral-liquid",
-    "shortDescription": "A powerful formula to support blood health, restore iron stores, and maintain everyday energy & vitality.",
+    "stockCount": 25,
+    "sku": "GLW-001",
+    "description": "A structured homoeopathic slimming course designed to support healthier daily weight management and overall vitality.",
+    "shortDesc": "A structured homoeopathic slimming course designed to support healthier daily weight management and overall vitality.",
     "benefits": [
-      "Healthy Haemoglobin Count: Supports optimal red blood cell formation.",
-      "Healthy Iron Stores: High-bioavailability iron gentle on the stomach.",
-      "Optimum Health & Vitality: Helps reduce tiredness, exhaustion, and daily fatigue.",
-      "Easy To Drink: Ready-to-use liquid ampoules with delicious natural berry taste.",
-      "Gentle & Effective: Non-constipating iron complex."
+      "21-Day Guided Plan: Formulated as a structured slimming course designed to support a healthier, active lifestyle.",
+      "Homoeopathic Preparation: Made with a gentle homoeopathic formula focused on wellness and balance.",
+      "Smart & Healthy Support: Helps promote fitness goals, weight management, and overall vitality without harsh additives.",
+      "Safe & Effective: Crafted to offer an accessible daily routine for weight management and healthy living goals."
     ],
     "availability": "In Stock",
-    "featured": false,
+    "featured": true,
     "tags": [
       "wellness",
-      "health",
-      "iron",
-      "minerals",
-      "energy",
-      "vitality"
+      "Wellness",
+      "addistop",
+      "21",
+      "days",
+      "slimming",
+      "plan"
+    ],
+    "slug": "addistop-21-day-slimming-plan",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Addistop 21-Days Slimming Plan available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
     ]
   },
   {
-    "id": "super-ton-chocolate-granules",
-    "name": "SUPER TON Chocolate Granules",
-    "subtitle": "Holistic Nutritional Formula for the Whole Family",
-    "tagline": "Supports Growth, Nutrition & Optimal Body Weight.",
+    "id": "aloe-vera-calendula-multipurpose-lotion",
+    "name": "Aloe Vera Calendula Multipurpose Hand & Body Lotion",
+    "subtitle": "150ml | Moisturizing & Soothing Gentle Skincare",
+    "tagline": "Hydrating everyday care for hands and body.",
+    "category": "bodycare",
+    "price": 405,
+    "badge": "Soothing Care",
+    "volume": "150 ml",
+    "shortDescription": "A soothing multipurpose lotion combining Aloe Vera and Calendula for dry, irritated skin and daily hydration.",
+    "features": [
+      "Dual Botanical Power: Combines Aloe Vera hydration with the natural calming benefits of Calendula extract.",
+      "Deeply Moisturizing & Soothing: Helps relieve dry, irritated skin while providing long-lasting hydration.",
+      "Multipurpose Formula: Suitable for daily application on hands, arms, legs, and body.",
+      "Gentle Skincare: Mild, non-greasy composition designed for smooth absorption across all skin types."
+    ],
+    "ingredients": "Aloe Vera, Calendula Extract.",
+    "idealFor": "Body and hand moisturising, soothing dryness, and gentle everyday skincare.",
+    "categoryName": "Body Care",
+    "originalPrice": 480,
+    "salePrice": 405,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 53,
+    "image": "assets/products/aloe-vera-calendula-multipurpose-lotion-3.png",
+    "gallery": [
+      "assets/products/aloe-vera-calendula-multipurpose-lotion-3.png",
+      "assets/products/aloe-vera-calendula-multipurpose-lotion.png",
+      "assets/products/aloe-vera-calendula-multipurpose-lotion-2.png"
+    ],
+    "badgeType": "green",
+    "inStock": true,
+    "stockCount": 32,
+    "sku": "GLW-002",
+    "description": "A soothing multipurpose lotion combining Aloe Vera and Calendula for dry, irritated skin and daily hydration.",
+    "shortDesc": "A soothing multipurpose lotion combining Aloe Vera and Calendula for dry, irritated skin and daily hydration.",
+    "benefits": [
+      "Dual Botanical Power: Combines Aloe Vera hydration with the natural calming benefits of Calendula extract.",
+      "Deeply Moisturizing & Soothing: Helps relieve dry, irritated skin while providing long-lasting hydration.",
+      "Multipurpose Formula: Suitable for daily application on hands, arms, legs, and body.",
+      "Gentle Skincare: Mild, non-greasy composition designed for smooth absorption across all skin types."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "bodycare",
+      "Body Care",
+      "aloe",
+      "vera",
+      "calendula",
+      "multipurpose",
+      "hand"
+    ],
+    "slug": "aloe-vera-calendula-multipurpose-lotion",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Aloe Vera Calendula Multipurpose Hand & Body Lotion available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "reroot-argan-shea-intense-repair-shampoo",
+    "name": "reroot Argan Oil + Shea Butter Intense Repair Shampoo",
+    "subtitle": "Smoothing & Restoring Hydrating Haircare",
+    "tagline": "Smooth, restore, and hydrate dry hair.",
+    "category": "haircare",
+    "price": 585,
+    "badge": "Toxin-Free",
+    "volume": "Shampoo",
+    "shortDescription": "Hydrating shampoo with Argan Oil and Shea Butter to smooth frizz, strengthen strands, and restore shine.",
+    "features": [
+      "Nourishing Active Blend: Rich Argan Oil and moisturizing Shea Butter deeply hydrate dry or damaged hair.",
+      "Intense Repair Action: Helps strengthen strands, manage frizz, and restore natural shine and elasticity.",
+      "Toxin-Free Clean Formula: Contains 0% parabens, sulphates, and silicones.",
+      "Universal Haircare: Suitable for all hair types, including color-treated and chemically processed hair."
+    ],
+    "ingredients": "Argan Oil, Shea Butter.",
+    "idealFor": "Dry hair, frizz control, smoothing, restoring, and hydrating haircare.",
+    "categoryName": "Hair Care",
+    "originalPrice": 700,
+    "salePrice": 585,
+    "onSale": true,
+    "rating": 4.7,
+    "reviewCount": 66,
+    "image": "assets/products/reroot-argan-shea-intense-repair-shampoo-4.png",
+    "gallery": [
+      "assets/products/reroot-argan-shea-intense-repair-shampoo-4.png",
+      "assets/products/reroot-argan-shea-intense-repair-shampoo.png",
+      "assets/products/reroot-argan-shea-intense-repair-shampoo-2.png",
+      "assets/products/reroot-argan-shea-intense-repair-shampoo-3.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 39,
+    "sku": "GLW-003",
+    "description": "Hydrating shampoo with Argan Oil and Shea Butter to smooth frizz, strengthen strands, and restore shine.",
+    "shortDesc": "Hydrating shampoo with Argan Oil and Shea Butter to smooth frizz, strengthen strands, and restore shine.",
+    "benefits": [
+      "Nourishing Active Blend: Rich Argan Oil and moisturizing Shea Butter deeply hydrate dry or damaged hair.",
+      "Intense Repair Action: Helps strengthen strands, manage frizz, and restore natural shine and elasticity.",
+      "Toxin-Free Clean Formula: Contains 0% parabens, sulphates, and silicones.",
+      "Universal Haircare: Suitable for all hair types, including color-treated and chemically processed hair."
+    ],
+    "availability": "In Stock",
+    "featured": true,
+    "tags": [
+      "haircare",
+      "Hair Care",
+      "reroot",
+      "argan",
+      "oil",
+      "shea",
+      "butter"
+    ],
+    "slug": "reroot-argan-shea-intense-repair-shampoo",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is reroot Argan Oil + Shea Butter Intense Repair Shampoo available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "arnica-medicated-oil",
+    "name": "ARNICA Medicated Oil",
+    "subtitle": "120ml | Soothing Herbal & Therapeutic Hair & Body Oil",
+    "tagline": "Herbal nourishment for hair, scalp, and body massage.",
+    "category": "haircare",
+    "price": 400,
+    "badge": "Herbal Oil",
+    "volume": "120 ml",
+    "shortDescription": "Arnica-infused medicated oil for gentle hair, scalp, massage, and localized soothing care.",
+    "features": [
+      "Enriched with Natural Arnica: Infused with Arnica extract known for herbal soothing and restorative properties.",
+      "Multipurpose Care: Suitable for hair and scalp nourishment, relaxing massage, and comforting localized application.",
+      "Deeply Nourishing Base: Helps condition, hydrate, and maintain skin and hair vitality without a heavy finish.",
+      "Complete Packaging Set: Comes in an amber bottle with official branded display box."
+    ],
+    "ingredients": "Arnica Montana / Arnica Extract.",
+    "idealFor": "Soothing care, conditioning, massage, and restorative wellness routines.",
+    "categoryName": "Hair Care",
+    "originalPrice": 480,
+    "salePrice": 400,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 79,
+    "image": "assets/products/arnica-medicated-oil-4.png",
+    "gallery": [
+      "assets/products/arnica-medicated-oil-4.png",
+      "assets/products/arnica-medicated-oil.png",
+      "assets/products/arnica-medicated-oil-2.png",
+      "assets/products/arnica-medicated-oil-3.png"
+    ],
+    "badgeType": "gold",
+    "inStock": true,
+    "stockCount": 46,
+    "sku": "GLW-004",
+    "description": "Arnica-infused medicated oil for gentle hair, scalp, massage, and localized soothing care.",
+    "shortDesc": "Arnica-infused medicated oil for gentle hair, scalp, massage, and localized soothing care.",
+    "benefits": [
+      "Enriched with Natural Arnica: Infused with Arnica extract known for herbal soothing and restorative properties.",
+      "Multipurpose Care: Suitable for hair and scalp nourishment, relaxing massage, and comforting localized application.",
+      "Deeply Nourishing Base: Helps condition, hydrate, and maintain skin and hair vitality without a heavy finish.",
+      "Complete Packaging Set: Comes in an amber bottle with official branded display box."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "haircare",
+      "Hair Care",
+      "arnica",
+      "medicated",
+      "oil"
+    ],
+    "slug": "arnica-medicated-oil",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is ARNICA Medicated Oil available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "arnica-medicated-shampoo",
+    "name": "ARNICA Medicated Shampoo",
+    "subtitle": "120ml | Herbal Scalp Care & Hair Strengthening Formula",
+    "tagline": "Gentle cleansing with Arnica scalp support.",
+    "category": "haircare",
+    "price": 450,
+    "badge": "Scalp Care",
+    "volume": "120 ml",
+    "shortDescription": "Arnica shampoo formulated to soothe the scalp, support roots, and gently cleanse buildup.",
+    "features": [
+      "Enriched with Arnica: Formulated with natural Arnica extract to soothe the scalp and promote healthy roots.",
+      "Therapeutic Cleansing: Gently cleanses dirt, excess oil, and product buildup without stripping moisture.",
+      "Scalp & Root Nourishment: Helps revitalize weak strands and maintain a balanced scalp environment.",
+      "Complete Packaging Set: Comes in a protected bottle paired with branded outer box."
+    ],
+    "ingredients": "Arnica Extract.",
+    "idealFor": "Scalp soothing, root strengthening, and gentle cleansing.",
+    "categoryName": "Hair Care",
+    "originalPrice": 540,
+    "salePrice": 450,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 92,
+    "image": "assets/products/arnica-medicated-shampoo-5.png",
+    "gallery": [
+      "assets/products/arnica-medicated-shampoo-5.png",
+      "assets/products/arnica-medicated-shampoo.png",
+      "assets/products/arnica-medicated-shampoo-2.png",
+      "assets/products/arnica-medicated-shampoo-3.png",
+      "assets/products/arnica-medicated-shampoo-4.png"
+    ],
+    "badgeType": "green",
+    "inStock": true,
+    "stockCount": 53,
+    "sku": "GLW-005",
+    "description": "Arnica shampoo formulated to soothe the scalp, support roots, and gently cleanse buildup.",
+    "shortDesc": "Arnica shampoo formulated to soothe the scalp, support roots, and gently cleanse buildup.",
+    "benefits": [
+      "Enriched with Arnica: Formulated with natural Arnica extract to soothe the scalp and promote healthy roots.",
+      "Therapeutic Cleansing: Gently cleanses dirt, excess oil, and product buildup without stripping moisture.",
+      "Scalp & Root Nourishment: Helps revitalize weak strands and maintain a balanced scalp environment.",
+      "Complete Packaging Set: Comes in a protected bottle paired with branded outer box."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "haircare",
+      "Hair Care",
+      "arnica",
+      "medicated",
+      "shampoo"
+    ],
+    "slug": "arnica-medicated-shampoo",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is ARNICA Medicated Shampoo available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "calciwin-granules",
+    "name": "Calciwin Granules",
+    "subtitle": "Complete Family Tonic for Calcium & Nutrients Deficiency (10 Sachets)",
+    "tagline": "Family calcium and nutrient support.",
     "category": "supplements",
+    "price": 400,
+    "badge": "Family Tonic",
+    "volume": "10 Sachets",
+    "shortDescription": "Convenient soluble granules formulated to support calcium and essential nutrient deficiencies.",
+    "features": [
+      "Targeted Nutritional Support: Helps address calcium and essential nutrient deficiencies in everyday diets.",
+      "Complete Family Tonic: Supports bone health, strength, and vitality for the family.",
+      "Convenient Sachet Format: Single-serve foil sachets for freshness, portability, and precise dosage.",
+      "Homoeopathic Formula: Gentle health supplement crafted using traditional homoeopathic principles."
+    ],
+    "ingredients": "Homoeopathic soluble granules.",
+    "idealFor": "Calcium and nutrients deficiency, bone support, and family wellness.",
     "categoryName": "Supplements",
+    "originalPrice": 480,
+    "salePrice": 400,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 105,
+    "image": "assets/products/calciwin-granules.png",
+    "gallery": [
+      "assets/products/calciwin-granules.png",
+      "assets/products/calciwin-granules-2.png",
+      "assets/products/calciwin-granules-3.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 60,
+    "sku": "GLW-006",
+    "description": "Convenient soluble granules formulated to support calcium and essential nutrient deficiencies.",
+    "shortDesc": "Convenient soluble granules formulated to support calcium and essential nutrient deficiencies.",
+    "benefits": [
+      "Targeted Nutritional Support: Helps address calcium and essential nutrient deficiencies in everyday diets.",
+      "Complete Family Tonic: Supports bone health, strength, and vitality for the family.",
+      "Convenient Sachet Format: Single-serve foil sachets for freshness, portability, and precise dosage.",
+      "Homoeopathic Formula: Gentle health supplement crafted using traditional homoeopathic principles."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "supplements",
+      "Supplements",
+      "calciwin",
+      "granules"
+    ],
+    "slug": "calciwin-granules",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Calciwin Granules available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "calendula-marigold-skin-lotion",
+    "name": "Calendula Marigold Skin Lotion",
+    "subtitle": "100ml | Gentle Soothing & Moisturizing Body Lotion",
+    "tagline": "Calendula care for dry and sensitive skin.",
+    "category": "bodycare",
+    "price": 250,
+    "badge": "Calendula",
+    "volume": "100 ml",
+    "shortDescription": "A gentle Calendula lotion for soothing, hydrating, repairing, and protecting dry or sensitive skin.",
+    "features": [
+      "Natural Calendula Extract: Uses marigold to calm dry, irritated, or sensitive skin.",
+      "Deep Hydration: Provides daily moisture to keep skin soft, smooth, and supple.",
+      "Gentle Daily Formula: Light, quick-absorbing texture designed for everyday use.",
+      "Safe External Application: Created for external body care and localized skin restoration."
+    ],
+    "ingredients": "Calendula (Marigold Extract).",
+    "idealFor": "Soothing, hydrating, skin repair, and protection.",
+    "categoryName": "Body Care",
+    "originalPrice": 300,
+    "salePrice": 250,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 118,
+    "image": "assets/products/calendula-marigold-skin-lotion-3.png",
+    "gallery": [
+      "assets/products/calendula-marigold-skin-lotion-3.png",
+      "assets/products/calendula-marigold-skin-lotion.png",
+      "assets/products/calendula-marigold-skin-lotion-2.png"
+    ],
+    "badgeType": "gold",
+    "inStock": true,
+    "stockCount": 67,
+    "sku": "GLW-007",
+    "description": "A gentle Calendula lotion for soothing, hydrating, repairing, and protecting dry or sensitive skin.",
+    "shortDesc": "A gentle Calendula lotion for soothing, hydrating, repairing, and protecting dry or sensitive skin.",
+    "benefits": [
+      "Natural Calendula Extract: Uses marigold to calm dry, irritated, or sensitive skin.",
+      "Deep Hydration: Provides daily moisture to keep skin soft, smooth, and supple.",
+      "Gentle Daily Formula: Light, quick-absorbing texture designed for everyday use.",
+      "Safe External Application: Created for external body care and localized skin restoration."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "bodycare",
+      "Body Care",
+      "calendula",
+      "marigold",
+      "skin",
+      "lotion"
+    ],
+    "slug": "calendula-marigold-skin-lotion",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Calendula Marigold Skin Lotion available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "international-beauty-care-cream",
+    "name": "International Beauty Care Cream",
+    "subtitle": "Homoeopathic Complexion & Blemish Formula",
+    "tagline": "Complexion support for blemish-prone skin.",
+    "category": "skincare",
+    "price": 400,
+    "badge": "Complexion Care",
+    "volume": "Cream",
+    "shortDescription": "Homoeopathic skincare cream for pimples, acne marks, blackheads, whiteheads, and blemishes.",
+    "features": [
+      "Clear Complexion Action: Targets pimples, acne marks, blackheads, and whiteheads for clearer skin.",
+      "Homoeopathic Preparation: Gentle, non-irritating formula designed to support skin healing and tone.",
+      "Universal Application: Suitable for all skin types, including sensitive, oily, and dry skin.",
+      "Complete Tube & Box Set: Includes squeeze tube and outer box for hygienic daily application."
+    ],
+    "ingredients": "Homoeopathic skincare cream.",
+    "idealFor": "Pimples, acne, blackheads, whiteheads, blemishes, and all skin types.",
+    "categoryName": "Skincare",
+    "originalPrice": 480,
+    "salePrice": 400,
+    "onSale": true,
+    "rating": 4.7,
+    "reviewCount": 131,
+    "image": "assets/products/international-beauty-care-cream-3.png",
+    "gallery": [
+      "assets/products/international-beauty-care-cream-3.png",
+      "assets/products/international-beauty-care-cream.png",
+      "assets/products/international-beauty-care-cream-2.png"
+    ],
+    "badgeType": "green",
+    "inStock": true,
+    "stockCount": 74,
+    "sku": "GLW-008",
+    "description": "Homoeopathic skincare cream for pimples, acne marks, blackheads, whiteheads, and blemishes.",
+    "shortDesc": "Homoeopathic skincare cream for pimples, acne marks, blackheads, whiteheads, and blemishes.",
+    "benefits": [
+      "Clear Complexion Action: Targets pimples, acne marks, blackheads, and whiteheads for clearer skin.",
+      "Homoeopathic Preparation: Gentle, non-irritating formula designed to support skin healing and tone.",
+      "Universal Application: Suitable for all skin types, including sensitive, oily, and dry skin.",
+      "Complete Tube & Box Set: Includes squeeze tube and outer box for hygienic daily application."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "skincare",
+      "Skincare",
+      "international",
+      "beauty",
+      "care",
+      "cream"
+    ],
+    "slug": "international-beauty-care-cream",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is International Beauty Care Cream available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "aloe-vera-cucumber-lotion",
+    "name": "Aloe Vera Cucumber Lotion",
+    "subtitle": "150ml | Refreshing & Hydrating Hand & Body Lotion",
+    "tagline": "Cool, refresh, and hydrate daily.",
+    "category": "bodycare",
+    "price": 450,
+    "badge": "Refreshing",
+    "volume": "150 ml",
+    "shortDescription": "A lightweight hand and body lotion with Aloe Vera and Cucumber for refreshing daily hydration.",
+    "features": [
+      "Cooling & Refreshing Blend: Aloe vera and cucumber extracts soothe, cool, and revitalize dull or dry skin.",
+      "Deep Daily Hydration: Locks in moisture without a greasy or sticky residue.",
+      "Hand & Body Application: Crafted for hands, arms, legs, and overall body care.",
+      "Lightweight Formula: Absorbs quickly for a refreshing feeling and smooth texture."
+    ],
+    "ingredients": "Aloe Vera, Cucumber Extract.",
+    "idealFor": "Refreshing, hydrating, and softening hands and body.",
+    "categoryName": "Body Care",
+    "originalPrice": 540,
+    "salePrice": 450,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 144,
+    "image": "assets/products/aloe-vera-cucumber-lotion-3.png",
+    "gallery": [
+      "assets/products/aloe-vera-cucumber-lotion-3.png",
+      "assets/products/aloe-vera-cucumber-lotion.png",
+      "assets/products/aloe-vera-cucumber-lotion-2.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 81,
+    "sku": "GLW-009",
+    "description": "A lightweight hand and body lotion with Aloe Vera and Cucumber for refreshing daily hydration.",
+    "shortDesc": "A lightweight hand and body lotion with Aloe Vera and Cucumber for refreshing daily hydration.",
+    "benefits": [
+      "Cooling & Refreshing Blend: Aloe vera and cucumber extracts soothe, cool, and revitalize dull or dry skin.",
+      "Deep Daily Hydration: Locks in moisture without a greasy or sticky residue.",
+      "Hand & Body Application: Crafted for hands, arms, legs, and overall body care.",
+      "Lightweight Formula: Absorbs quickly for a refreshing feeling and smooth texture."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "bodycare",
+      "Body Care",
+      "aloe",
+      "vera",
+      "cucumber",
+      "lotion"
+    ],
+    "slug": "aloe-vera-cucumber-lotion",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Aloe Vera Cucumber Lotion available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "herbal-freckle-cream-combo",
+    "name": "Herbal Freckle Cream 2-in-1 Combo Pack",
+    "subtitle": "Cream & Serum Set for Anti-Pigmentation & Dark Spots",
+    "tagline": "Dual care for spots and uneven tone.",
+    "category": "skincare",
+    "price": 450,
+    "badge": "2-in-1 Set",
+    "volume": "Cream + Serum",
+    "shortDescription": "A herbal cream and serum set made to support freckle reduction, spot fading, and brighter-looking skin.",
+    "features": [
+      "2-in-1 Dual Action: Cream and serum work together against spots and hyperpigmentation.",
+      "Fades Freckles & Dark Spots: Helps reduce freckles, blemishes, dark spots, and uneven pigmentation.",
+      "Herbal Formula: Natural extracts gently soothe, nourish, and revitalize skin.",
+      "Anti-Aging & Radiance Support: Helps reduce dullness while improving skin texture and glow."
+    ],
+    "ingredients": "Herbal / Botanical Blend.",
+    "idealFor": "Freckles, dark spots, blemishes, tone correction, and skin brightening.",
+    "categoryName": "Skincare",
+    "originalPrice": 540,
+    "salePrice": 450,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 157,
+    "image": "assets/products/herbal-freckle-cream-combo-3.png",
+    "gallery": [
+      "assets/products/herbal-freckle-cream-combo-3.png",
+      "assets/products/herbal-freckle-cream-combo.png",
+      "assets/products/herbal-freckle-cream-combo-2.png"
+    ],
+    "badgeType": "gold",
+    "inStock": true,
+    "stockCount": 88,
+    "sku": "GLW-010",
+    "description": "A herbal cream and serum set made to support freckle reduction, spot fading, and brighter-looking skin.",
+    "shortDesc": "A herbal cream and serum set made to support freckle reduction, spot fading, and brighter-looking skin.",
+    "benefits": [
+      "2-in-1 Dual Action: Cream and serum work together against spots and hyperpigmentation.",
+      "Fades Freckles & Dark Spots: Helps reduce freckles, blemishes, dark spots, and uneven pigmentation.",
+      "Herbal Formula: Natural extracts gently soothe, nourish, and revitalize skin.",
+      "Anti-Aging & Radiance Support: Helps reduce dullness while improving skin texture and glow."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "skincare",
+      "Skincare",
+      "herbal",
+      "freckle",
+      "cream",
+      "2",
+      "in"
+    ],
+    "slug": "herbal-freckle-cream-combo",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Herbal Freckle Cream 2-in-1 Combo Pack available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "ginkgovit-oral-liquid",
+    "name": "Ginkgovit Oral Liquid",
+    "subtitle": "Homoeopathic Magic Drops with Ginkgo Biloba, Bacopa & Ashwagandha (10 Vials x 10ml)",
+    "tagline": "Daily cognitive and vitality support.",
+    "category": "wellness",
     "price": 1650,
+    "badge": "Magic Drops",
+    "volume": "10 x 10 ml",
+    "shortDescription": "Homoeopathic oral liquid combining Ginkgo Biloba, Bacopa, and Ashwagandha for focus, circulation, and energy support.",
+    "features": [
+      "Powerful Herbal Synergy: Combines Ginkgo Biloba, Bacopa, and Ashwagandha to support brain function, focus, and energy.",
+      "Circulatory & Cognitive Support: Helps support blood flow to the brain, heart, and vital organs.",
+      "Premium Oral Liquid: Liquid drops formula designed for quick absorption and convenient daily usage.",
+      "Hygienic Single-Serve Vials: Amber glass vials protect potency and freshness."
+    ],
+    "ingredients": "Ginkgo biloba, Bacopa, Ashwagandha.",
+    "idealFor": "Brain circulation, mental alertness, vitality, and overall organ support.",
+    "categoryName": "Wellness",
     "originalPrice": 1950,
     "salePrice": 1650,
     "onSale": true,
     "rating": 4.9,
-    "reviewCount": 145,
-    "image": "assets/products/super-ton.jpg",
+    "reviewCount": 50,
+    "image": "assets/products/ginkgovit-oral-liquid-3.png",
     "gallery": [
-      "assets/products/super-ton.jpg"
+      "assets/products/ginkgovit-oral-liquid-3.png",
+      "assets/products/ginkgovit-oral-liquid.png",
+      "assets/products/ginkgovit-oral-liquid-2.png"
     ],
-    "badge": "Family Favorite",
-    "badgeType": "gold",
-    "volume": "Granules Jar (400g)",
+    "badgeType": "green",
     "inStock": true,
-    "stockCount": 55,
-    "sku": "GLW-SUP-001",
-    "shortDesc": "Rich, delicious chocolate granules packed with vital proteins, calcium, and vitamins to boost stamina and healthy weight.",
-    "description": "SUPER TON Chocolate Granules is a comprehensive, holistic dietary tonic designed for children, teens, and adults. Blending rich cocoa with essential amino acids, digestive botanicals, and micronutrients, it enhances appetite, promotes healthy weight gain, and provides sustained vitality.",
-    "features": [
-      "Supports Growth and Nutrition: Supplies essential building blocks for developing bodies.",
-      "Promotes Optimal Body Weight: Naturally supports healthy appetite and muscle nourishment.",
-      "A Holistic Formula for the Whole Family: Loved by kids and adults alike.",
-      "Delicious Chocolate Flavor: Easily mixes with warm milk or smoothies."
+    "stockCount": 25,
+    "sku": "GLW-011",
+    "description": "Homoeopathic oral liquid combining Ginkgo Biloba, Bacopa, and Ashwagandha for focus, circulation, and energy support.",
+    "shortDesc": "Homoeopathic oral liquid combining Ginkgo Biloba, Bacopa, and Ashwagandha for focus, circulation, and energy support.",
+    "benefits": [
+      "Powerful Herbal Synergy: Combines Ginkgo Biloba, Bacopa, and Ashwagandha to support brain function, focus, and energy.",
+      "Circulatory & Cognitive Support: Helps support blood flow to the brain, heart, and vital organs.",
+      "Premium Oral Liquid: Liquid drops formula designed for quick absorption and convenient daily usage.",
+      "Hygienic Single-Serve Vials: Amber glass vials protect potency and freshness."
     ],
-    "ingredients": "Whey Protein Concentrate, Maltodextrin, Cocoa Powder, Withania Somnifera (Ashwagandha), Asparagus Racemosus (Shatavari), Calcium, Vitamin D3, Vitamin B-Complex, Natural Sweeteners.",
-    "howToUse": "Add 2 rounded tablespoons of SUPER TON granules to a glass of warm milk. Stir vigorously until completely dissolved. Drink twice daily morning and evening.",
-    "idealFor": "Underweight individuals, growing children, convalescents, athletes, and anyone needing extra daily nutrition.",
-    "importantNotes": "Dietary nutritional formula. Keep container tightly closed in a cool, dry place. Best consumed mixed in warm milk or smoothies.",
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "wellness",
+      "Wellness",
+      "ginkgovit",
+      "oral",
+      "liquid"
+    ],
+    "slug": "ginkgovit-oral-liquid",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
     "faqs": [
       {
-        "q": "Who can take SUPER TON Chocolate Granules?",
-        "a": "It is formulated for the whole family, including children, teenagers, and adults looking to support everyday stamina and healthy nutrition."
+        "q": "Is Ginkgovit Oral Liquid available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
       },
       {
-        "q": "How do I prepare a serving?",
-        "a": "Mix 2 rounded tablespoons into a glass of warm milk or smoothie, stirring until completely dissolved. Enjoy twice daily."
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
       },
       {
-        "q": "How long does a 400g jar last?",
-        "a": "Depending on usage (1-2 servings daily), a 400g jar provides approximately 2 to 3 weeks of daily nourishment."
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
       }
+    ]
+  },
+  {
+    "id": "ginxeng-oral-liquid-plus",
+    "name": "GINXENG Oral Liquid PLUS",
+    "subtitle": "Premium Ginseng Energy & Vitality Tonic (10 Vials x 10ml)",
+    "tagline": "Revitalize, restore, and recover.",
+    "category": "wellness",
+    "price": 1650,
+    "badge": "Energy Tonic",
+    "volume": "10 x 10 ml",
+    "shortDescription": "Premium ginseng oral liquid ampoules for daily energy, stamina, recovery, and vitality support.",
+    "features": [
+      "Triple Action Benefits: Formulated to revitalize, restore, and recover body energy and stamina.",
+      "Concentrated Ginseng Formula: Uses ginseng root extract to help combat daily fatigue and weakness.",
+      "Fast-Absorbing Oral Liquid: Liquid ampoules for quick nutrient delivery.",
+      "Premium Gift Packaging: Amber glass vials with gold caps inside a red presentation display box."
     ],
-    "slug": "super-ton-chocolate-granules",
-    "shortDescription": "Rich, delicious chocolate granules packed with vital proteins, calcium, and vitamins to boost stamina and healthy weight.",
+    "ingredients": "Ginseng Root Extract.",
+    "idealFor": "Energy boost, physical recovery, stamina improvement, and vitality support.",
+    "categoryName": "Wellness",
+    "originalPrice": 1950,
+    "salePrice": 1650,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 63,
+    "image": "assets/products/ginxeng-oral-liquid-plus-3.png",
+    "gallery": [
+      "assets/products/ginxeng-oral-liquid-plus-3.png",
+      "assets/products/ginxeng-oral-liquid-plus.png",
+      "assets/products/ginxeng-oral-liquid-plus-2.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 32,
+    "sku": "GLW-012",
+    "description": "Premium ginseng oral liquid ampoules for daily energy, stamina, recovery, and vitality support.",
+    "shortDesc": "Premium ginseng oral liquid ampoules for daily energy, stamina, recovery, and vitality support.",
     "benefits": [
-      "Supports Growth and Nutrition: Supplies essential building blocks for developing bodies.",
-      "Promotes Optimal Body Weight: Naturally supports healthy appetite and muscle nourishment.",
-      "A Holistic Formula for the Whole Family: Loved by kids and adults alike.",
-      "Delicious Chocolate Flavor: Easily mixes with warm milk or smoothies."
+      "Triple Action Benefits: Formulated to revitalize, restore, and recover body energy and stamina.",
+      "Concentrated Ginseng Formula: Uses ginseng root extract to help combat daily fatigue and weakness.",
+      "Fast-Absorbing Oral Liquid: Liquid ampoules for quick nutrient delivery.",
+      "Premium Gift Packaging: Amber glass vials with gold caps inside a red presentation display box."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "wellness",
+      "Wellness",
+      "ginxeng",
+      "oral",
+      "liquid",
+      "plus"
+    ],
+    "slug": "ginxeng-oral-liquid-plus",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is GINXENG Oral Liquid PLUS available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "nourishing-herbal-hair-oil",
+    "name": "Nourishing Herbal Hair Oil",
+    "subtitle": "Daily Hair Care & Scalp Health (25% Extra Free Value Pack)",
+    "tagline": "Daily botanical nourishment with 25% extra free.",
+    "category": "haircare",
+    "price": 450,
+    "badge": "25% Extra",
+    "volume": "Value Pack",
+    "shortDescription": "Herbal hair oil formulated to nourish roots, condition the scalp, manage frizz, and enhance shine.",
+    "features": [
+      "Botanical Herbal Blend: Rich botanical extracts nourish roots, manage frizz, and maintain natural luster.",
+      "Daily Hair Care Routine: Designed for regular use to keep strands smooth and protected.",
+      "Scalp & Root Conditioning: Promotes balanced scalp hydration and hair manageability.",
+      "25% Extra Free Pack: Promotional packaging offers 25% extra oil free."
+    ],
+    "ingredients": "Botanical herbal extracts.",
+    "idealFor": "Daily hair nourishing, shine enhancement, scalp conditioning, and all hair types.",
+    "categoryName": "Hair Care",
+    "originalPrice": 540,
+    "salePrice": 450,
+    "onSale": true,
+    "rating": 4.7,
+    "reviewCount": 76,
+    "image": "assets/products/nourishing-herbal-hair-oil-5.png",
+    "gallery": [
+      "assets/products/nourishing-herbal-hair-oil-5.png",
+      "assets/products/nourishing-herbal-hair-oil.png",
+      "assets/products/nourishing-herbal-hair-oil-2.png",
+      "assets/products/nourishing-herbal-hair-oil-3.png",
+      "assets/products/nourishing-herbal-hair-oil-4.png"
+    ],
+    "badgeType": "gold",
+    "inStock": true,
+    "stockCount": 39,
+    "sku": "GLW-013",
+    "description": "Herbal hair oil formulated to nourish roots, condition the scalp, manage frizz, and enhance shine.",
+    "shortDesc": "Herbal hair oil formulated to nourish roots, condition the scalp, manage frizz, and enhance shine.",
+    "benefits": [
+      "Botanical Herbal Blend: Rich botanical extracts nourish roots, manage frizz, and maintain natural luster.",
+      "Daily Hair Care Routine: Designed for regular use to keep strands smooth and protected.",
+      "Scalp & Root Conditioning: Promotes balanced scalp hydration and hair manageability.",
+      "25% Extra Free Pack: Promotional packaging offers 25% extra oil free."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "haircare",
+      "Hair Care",
+      "nourishing",
+      "herbal",
+      "hair",
+      "oil"
+    ],
+    "slug": "nourishing-herbal-hair-oil",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Nourishing Herbal Hair Oil available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "hair-scalp-serum",
+    "name": "Hair & Scalp Serum",
+    "subtitle": "50ml | Ginseng + Procapil Advanced Root & Scalp Care",
+    "tagline": "Advanced dropper care for stronger roots.",
+    "category": "haircare",
+    "price": 1755,
+    "badge": "Advanced Root Care",
+    "volume": "50 ml",
+    "shortDescription": "Ginseng and Procapil scalp serum for root fortification, follicle revitalization, and denser-looking hair.",
+    "features": [
+      "Advanced Active Blend: Ginseng extract and Procapil help strengthen roots and combat hair thinning.",
+      "Precision Dropper Dispenser: Targeted dropper enables clean direct application to the scalp.",
+      "Scalp & Root Nourishment: Supports scalp circulation and healthier-looking hair growth.",
+      "Amber Glass Protection: 50ml amber glass bottle paired with official display box."
+    ],
+    "ingredients": "Ginseng Extract, Procapil Complex.",
+    "idealFor": "Hair growth support, root fortification, follicle revitalization, and scalp nourishment.",
+    "categoryName": "Hair Care",
+    "originalPrice": 2080,
+    "salePrice": 1755,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 89,
+    "image": "assets/products/hair-scalp-serum-5.png",
+    "gallery": [
+      "assets/products/hair-scalp-serum-5.png",
+      "assets/products/hair-scalp-serum.png",
+      "assets/products/hair-scalp-serum-2.png",
+      "assets/products/hair-scalp-serum-3.png",
+      "assets/products/hair-scalp-serum-4.png"
+    ],
+    "badgeType": "green",
+    "inStock": true,
+    "stockCount": 46,
+    "sku": "GLW-014",
+    "description": "Ginseng and Procapil scalp serum for root fortification, follicle revitalization, and denser-looking hair.",
+    "shortDesc": "Ginseng and Procapil scalp serum for root fortification, follicle revitalization, and denser-looking hair.",
+    "benefits": [
+      "Advanced Active Blend: Ginseng extract and Procapil help strengthen roots and combat hair thinning.",
+      "Precision Dropper Dispenser: Targeted dropper enables clean direct application to the scalp.",
+      "Scalp & Root Nourishment: Supports scalp circulation and healthier-looking hair growth.",
+      "Amber Glass Protection: 50ml amber glass bottle paired with official display box."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "haircare",
+      "Hair Care",
+      "hair",
+      "scalp",
+      "serum"
+    ],
+    "slug": "hair-scalp-serum",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Hair & Scalp Serum available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "hydration-serum",
+    "name": "Hydration Serum",
+    "subtitle": "1% Hyaluronic Acid & Cucumber Infused Facial Serum",
+    "tagline": "Dewy hydration for all skin types.",
+    "category": "skincare",
+    "price": 855,
+    "badge": "Hydration",
+    "volume": "Facial Serum",
+    "shortDescription": "Lightweight serum with 1% Hyaluronic Acid and Cucumber to hydrate, soothe, and plump skin.",
+    "features": [
+      "1% Hyaluronic Acid Power: Intensely hydrates and plumps skin by binding moisture.",
+      "Cucumber-Infused Care: Soothes tired skin for a refreshed, dewy finish.",
+      "Lightweight & Fast-Absorbing: Non-greasy texture absorbs quickly without clogging pores.",
+      "Hygienic Pump Dispenser: Frosted bottle with protective cap and pump top."
+    ],
+    "ingredients": "1% Hyaluronic Acid, Cucumber Extract.",
+    "idealFor": "Deep hydration, skin soothing, plumping, moisture lock, dry and sensitive skin.",
+    "categoryName": "Skincare",
+    "originalPrice": 1010,
+    "salePrice": 855,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 102,
+    "image": "assets/products/hydration-serum.png",
+    "gallery": [
+      "assets/products/hydration-serum.png",
+      "assets/products/hydration-serum-2.png",
+      "assets/products/hydration-serum-3.png",
+      "assets/products/hydration-serum-4.png",
+      "assets/products/hydration-serum-5.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 53,
+    "sku": "GLW-015",
+    "description": "Lightweight serum with 1% Hyaluronic Acid and Cucumber to hydrate, soothe, and plump skin.",
+    "shortDesc": "Lightweight serum with 1% Hyaluronic Acid and Cucumber to hydrate, soothe, and plump skin.",
+    "benefits": [
+      "1% Hyaluronic Acid Power: Intensely hydrates and plumps skin by binding moisture.",
+      "Cucumber-Infused Care: Soothes tired skin for a refreshed, dewy finish.",
+      "Lightweight & Fast-Absorbing: Non-greasy texture absorbs quickly without clogging pores.",
+      "Hygienic Pump Dispenser: Frosted bottle with protective cap and pump top."
+    ],
+    "availability": "In Stock",
+    "featured": true,
+    "tags": [
+      "skincare",
+      "Skincare",
+      "hydration",
+      "serum"
+    ],
+    "slug": "hydration-serum",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Hydration Serum available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "aloe-vera-calendula-lotion",
+    "name": "Aloe Vera Calendula Lotion",
+    "subtitle": "150ml | Deeply Nourishing Hand & Body Lotion",
+    "tagline": "Deep nourishment for hands and body.",
+    "category": "bodycare",
+    "price": 450,
+    "badge": "Deep Nourishment",
+    "volume": "150 ml",
+    "shortDescription": "Aloe Vera and Calendula hand and body lotion for deep nourishment, soothing care, and moisture protection.",
+    "features": [
+      "Aloe Vera & Calendula Fusion: Soothes and helps repair dry, sensitive skin.",
+      "Deep Nourishment: Delivers long-lasting moisture to hands and body.",
+      "Quick-Absorbing Texture: Non-greasy formula leaves skin soft and comfortable.",
+      "Everyday Body Care: Ideal after showers to protect and restore the skin barrier."
+    ],
+    "ingredients": "Aloe Vera Extract, Calendula Flower Extract.",
+    "idealFor": "Deep nourishment, skin soothing, moisture protection, hands and body care.",
+    "categoryName": "Body Care",
+    "originalPrice": 540,
+    "salePrice": 450,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 115,
+    "image": "assets/products/aloe-vera-calendula-lotion-4.png",
+    "gallery": [
+      "assets/products/aloe-vera-calendula-lotion-4.png",
+      "assets/products/aloe-vera-calendula-lotion.png",
+      "assets/products/aloe-vera-calendula-lotion-2.png",
+      "assets/products/aloe-vera-calendula-lotion-3.png"
+    ],
+    "badgeType": "gold",
+    "inStock": true,
+    "stockCount": 60,
+    "sku": "GLW-016",
+    "description": "Aloe Vera and Calendula hand and body lotion for deep nourishment, soothing care, and moisture protection.",
+    "shortDesc": "Aloe Vera and Calendula hand and body lotion for deep nourishment, soothing care, and moisture protection.",
+    "benefits": [
+      "Aloe Vera & Calendula Fusion: Soothes and helps repair dry, sensitive skin.",
+      "Deep Nourishment: Delivers long-lasting moisture to hands and body.",
+      "Quick-Absorbing Texture: Non-greasy formula leaves skin soft and comfortable.",
+      "Everyday Body Care: Ideal after showers to protect and restore the skin barrier."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "bodycare",
+      "Body Care",
+      "aloe",
+      "vera",
+      "calendula",
+      "lotion"
+    ],
+    "slug": "aloe-vera-calendula-lotion",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Aloe Vera Calendula Lotion available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "moovo-joints-care-ampoules",
+    "name": "Moovo Joints Care Oral Ampoules",
+    "subtitle": "Advanced Joint Function, Mobility & Flexibility Supplement (10 Vials x 10ml)",
+    "tagline": "Daily support for joint mobility.",
+    "category": "wellness",
+    "price": 1650,
+    "badge": "Joint Care",
+    "volume": "10 x 10 ml",
+    "shortDescription": "Oral ampoules formulated to support joint function, daily mobility, and flexibility.",
+    "features": [
+      "Joint Care Support: Formulated to maintain healthy joint function and target stiffness.",
+      "Enhanced Mobility & Flexibility: Supports smooth movement and ease of motion.",
+      "Fast-Acting Liquid Formula: Drinking ampoule format for quick absorption.",
+      "Hygienic Single-Serve Vials: Individual 10ml amber glass bottles for freshness and precise dosing."
+    ],
+    "ingredients": "Joint function oral supplement.",
+    "idealFor": "Healthy joint function, daily mobility, and improved flexibility.",
+    "categoryName": "Wellness",
+    "originalPrice": 1950,
+    "salePrice": 1650,
+    "onSale": true,
+    "rating": 4.8,
+    "reviewCount": 128,
+    "image": "assets/products/moovo-joints-care-ampoules-5.png",
+    "gallery": [
+      "assets/products/moovo-joints-care-ampoules-5.png",
+      "assets/products/moovo-joints-care-ampoules.png",
+      "assets/products/moovo-joints-care-ampoules-2.png",
+      "assets/products/moovo-joints-care-ampoules-3.png",
+      "assets/products/moovo-joints-care-ampoules-4.png"
+    ],
+    "badgeType": "green",
+    "inStock": true,
+    "stockCount": 67,
+    "sku": "GLW-017",
+    "description": "Oral ampoules formulated to support joint function, daily mobility, and flexibility.",
+    "shortDesc": "Oral ampoules formulated to support joint function, daily mobility, and flexibility.",
+    "benefits": [
+      "Joint Care Support: Formulated to maintain healthy joint function and target stiffness.",
+      "Enhanced Mobility & Flexibility: Supports smooth movement and ease of motion.",
+      "Fast-Acting Liquid Formula: Drinking ampoule format for quick absorption.",
+      "Hygienic Single-Serve Vials: Individual 10ml amber glass bottles for freshness and precise dosing."
     ],
     "availability": "In Stock",
     "featured": true,
     "tags": [
       "wellness",
-      "supplements",
-      "granules",
-      "energy",
-      "nutrition"
+      "Wellness",
+      "moovo",
+      "joints",
+      "care",
+      "oral",
+      "ampoules"
+    ],
+    "slug": "moovo-joints-care-ampoules",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Moovo Joints Care Oral Ampoules available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
     ]
   },
   {
-    "id": "lavender-chamomile-lotion",
-    "name": "Lavender Chamomile Lotion",
-    "subtitle": "Calms & Soothes Hands & Body",
-    "tagline": "Velvety Softness With A Calming Botanical Aroma.",
-    "category": "bodycare",
-    "categoryName": "Body & Personal Care",
-    "price": 950,
-    "originalPrice": 1150,
-    "salePrice": 950,
+    "id": "pcos-care-granules",
+    "name": "PCOS-care Granules",
+    "subtitle": "Hormonal Balance & PCOS Support Supplement (10 Sachets x 5g)",
+    "tagline": "Women’s wellness in convenient sachets.",
+    "category": "supplements",
+    "price": 550,
+    "badge": "Women’s Wellness",
+    "volume": "10 Sachets x 5g",
+    "shortDescription": "Soluble granules formulated to support hormonal balance and PCOS wellness routines.",
+    "features": [
+      "Hormonal Balance Support: Formulated to promote natural hormonal balance and PCOS management support.",
+      "Targeted Women’s Wellness: Supports reproductive health, cycle regularity, and ovarian function.",
+      "Convenient Daily Sachets: Pre-measured 5g foil sachets for freshness and portability.",
+      "Soluble Granule Formula: Easily dissolves in water or beverage of choice."
+    ],
+    "ingredients": "Soluble granule formula.",
+    "idealFor": "Hormonal balance, PCOS support, reproductive wellness, and cycle support.",
+    "categoryName": "Supplements",
+    "originalPrice": 650,
+    "salePrice": 550,
+    "onSale": true,
+    "rating": 4.7,
+    "reviewCount": 141,
+    "image": "assets/products/pcos-care-granules-3.png",
+    "gallery": [
+      "assets/products/pcos-care-granules-3.png",
+      "assets/products/pcos-care-granules.png",
+      "assets/products/pcos-care-granules-2.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 74,
+    "sku": "GLW-018",
+    "description": "Soluble granules formulated to support hormonal balance and PCOS wellness routines.",
+    "shortDesc": "Soluble granules formulated to support hormonal balance and PCOS wellness routines.",
+    "benefits": [
+      "Hormonal Balance Support: Formulated to promote natural hormonal balance and PCOS management support.",
+      "Targeted Women’s Wellness: Supports reproductive health, cycle regularity, and ovarian function.",
+      "Convenient Daily Sachets: Pre-measured 5g foil sachets for freshness and portability.",
+      "Soluble Granule Formula: Easily dissolves in water or beverage of choice."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "supplements",
+      "Supplements",
+      "pcos",
+      "care",
+      "granules"
+    ],
+    "slug": "pcos-care-granules",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is PCOS-care Granules available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
+    ]
+  },
+  {
+    "id": "anti-dandruff-shampoo",
+    "name": "Anti-Dandruff Shampoo",
+    "subtitle": "Hair & Scalp Care for Men & Women",
+    "tagline": "Flake control and deep scalp cleansing.",
+    "category": "haircare",
+    "price": 650,
+    "badge": "Anti-Dandruff",
+    "volume": "Shampoo",
+    "shortDescription": "Unisex anti-dandruff shampoo for flake control, scalp cleansing, and stronger-looking hair.",
+    "features": [
+      "Targeted Flake Control: Helps clear flakes, relieve itchiness, and prevent dandruff recurrence.",
+      "Deep Scalp Cleansing: Removes dirt, excess oil, and buildup without stripping moisture.",
+      "Enriched with Vitamins & Minerals: Nourishes scalp and supports thicker, longer-looking hair.",
+      "Unisex Formula: Balanced for daily hair and scalp care for men and women."
+    ],
+    "ingredients": "Essential vitamins, minerals, and nutrients.",
+    "idealFor": "Dandruff reduction, deep scalp cleansing, damaged hair repair, strength, and thickness.",
+    "categoryName": "Hair Care",
+    "originalPrice": 770,
+    "salePrice": 650,
     "onSale": true,
     "rating": 4.8,
-    "reviewCount": 67,
-    "image": "assets/products/lavender-lotion.jpg",
+    "reviewCount": 154,
+    "image": "assets/products/anti-dandruff-shampoo.png",
     "gallery": [
-      "assets/products/lavender-lotion.jpg"
+      "assets/products/anti-dandruff-shampoo.png",
+      "assets/products/anti-dandruff-shampoo-2.png",
+      "assets/products/anti-dandruff-shampoo-3.png",
+      "assets/products/anti-dandruff-shampoo-4.png",
+      "assets/products/anti-dandruff-shampoo-5.png"
     ],
-    "badge": "Relaxing Care",
-    "badgeType": "purple",
-    "volume": "150 ml",
+    "badgeType": "gold",
     "inStock": true,
-    "stockCount": 70,
-    "sku": "GLW-BDY-001",
-    "shortDesc": "Lightweight soothing moisturizer infused with French lavender and chamomile to relieve dryness and calm the senses.",
-    "description": "Glowistic Lavender Chamomile Lotion delivers 24-hour hydration with a velvety, non-greasy finish. The calming aromatic blend of Lavender and Chamomile eases daily tension while nourishing dry, rough patches on hands, arms, and body.",
-    "features": [
-      "Calms & Soothes Hands & Body: Instantly relieves tight, dry, and irritated skin.",
-      "Fast-Absorbing & Non-Greasy: Silky texture sinks in immediately.",
-      "Aromatherapeutic Glow: Natural floral aroma relaxes mind and body.",
-      "Enriched with Vitamin E and Shea Butter for lasting moisture."
-    ],
-    "ingredients": "Aqua, Lavender Flower Water, Chamomile Flower Extract, Shea Butter, Sweet Almond Oil, Glycerin, Cetearyl Alcohol, Tocopheryl Acetate (Vitamin E), Stearic Acid, Essential Oil Blend.",
-    "howToUse": "Smooth generously over hands and body following a bath or shower, or whenever skin feels dry. Massage gently until absorbed.",
-    "idealFor": "Dry, sensitive skin, everyday full-body hydration, and bedtime relaxation.",
-    "importantNotes": "For external body and hand use only. Do not apply on broken or irritated skin. Store in a cool, dry place away from direct sunlight.",
-    "faqs": [
-      {
-        "q": "Is this lotion non-greasy?",
-        "a": "Yes, it has a lightweight, fast-absorbing texture that moisturizes deeply without leaving a sticky or heavy residue."
-      },
-      {
-        "q": "When should I apply it?",
-        "a": "Apply generously after bathing or whenever skin feels dry. Its soothing aroma makes it ideal for evening bedtime routines."
-      },
-      {
-        "q": "Can I use it on both hands and body?",
-        "a": "Yes, it is specifically formulated as a dual hand and body moisturizer."
-      }
-    ],
-    "slug": "lavender-chamomile-lotion",
-    "shortDescription": "Lightweight soothing moisturizer infused with French lavender and chamomile to relieve dryness and calm the senses.",
+    "stockCount": 81,
+    "sku": "GLW-019",
+    "description": "Unisex anti-dandruff shampoo for flake control, scalp cleansing, and stronger-looking hair.",
+    "shortDesc": "Unisex anti-dandruff shampoo for flake control, scalp cleansing, and stronger-looking hair.",
     "benefits": [
-      "Calms & Soothes Hands & Body: Instantly relieves tight, dry, and irritated skin.",
-      "Fast-Absorbing & Non-Greasy: Silky texture sinks in immediately.",
-      "Aromatherapeutic Glow: Natural floral aroma relaxes mind and body.",
-      "Enriched with Vitamin E and Shea Butter for lasting moisture."
+      "Targeted Flake Control: Helps clear flakes, relieve itchiness, and prevent dandruff recurrence.",
+      "Deep Scalp Cleansing: Removes dirt, excess oil, and buildup without stripping moisture.",
+      "Enriched with Vitamins & Minerals: Nourishes scalp and supports thicker, longer-looking hair.",
+      "Unisex Formula: Balanced for daily hair and scalp care for men and women."
     ],
     "availability": "In Stock",
     "featured": false,
     "tags": [
-      "body care",
-      "personal care",
-      "lotion",
-      "lavender",
-      "chamomile"
+      "haircare",
+      "Hair Care",
+      "anti",
+      "dandruff",
+      "shampoo"
+    ],
+    "slug": "anti-dandruff-shampoo",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Anti-Dandruff Shampoo available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
     ]
   },
   {
-    "id": "wegro-ideal-growth",
-    "name": "WeGro Ideal Growth",
-    "subtitle": "One-Month Homoeopathy Course for Kids & Teens",
-    "tagline": "Grow Tall. Grow Strong. Grow Happy.",
-    "category": "supplements",
-    "categoryName": "Supplements",
-    "price": 750,
-    "originalPrice": 850,
-    "salePrice": 750,
-    "onSale": false,
-    "rating": 4.8,
-    "reviewCount": 83,
-    "image": "assets/products/wegro.jpg",
-    "gallery": [
-      "assets/products/wegro.jpg"
-    ],
-    "badge": "Kids & Teens",
-    "badgeType": "orange",
-    "volume": "1-Month Pack (BH.002)",
-    "inStock": true,
-    "stockCount": 65,
-    "sku": "GLW-SUP-002",
-    "shortDesc": "Rs. 750 (Incl. Taxes). Targeted 1-month homeopathic course formulated to support height, bone density, and vitality in growing youth.",
-    "description": "WeGro Ideal Growth is a time-tested, gentle homeopathic formulation tailored for children and teenagers during crucial growth phases. It optimizes calcium assimilation, supports bone elongation, and balances physical development without harsh chemicals.",
+    "id": "oclear-acne-clear-serum",
+    "name": "O'Clear Acne Clear Serum",
+    "subtitle": "Tea Tree Oil & Salicylic Acid Anti-Acne Formula",
+    "tagline": "Clearer skin with targeted acne care.",
+    "category": "skincare",
+    "price": 855,
+    "badge": "Anti-Acne",
+    "volume": "Serum",
+    "shortDescription": "Tea Tree Oil and Salicylic Acid serum for acne, excess oil, blemishes, and clearer-looking skin.",
     "features": [
-      "Grow Tall. Grow Strong. Grow Happy: Tailored for kids and adolescents.",
-      "One-Month Homoeopathy Course: Complete 1-2-3 phased daily course.",
-      "Natural & Safe: Gentle homeopathic active ingredients with zero side effects.",
-      "Affordable Family Healthcare: Transparent MRP Rs. 750.00 (Incl. Taxes)."
+      "Fights Acne & Breakouts: Salicylic Acid helps unclog pores and target active pimples.",
+      "Controls Excess Oil: Tea Tree Oil helps regulate sebum and reduce shine.",
+      "Clears Blemishes & Spot Marks: Gently exfoliates and supports skin renewal.",
+      "Gentle & Safe Care: Mild, fast-absorbing formula designed for effective anti-acne support."
     ],
-    "ingredients": "Baryta Carbonica 30C, Calcarea Phosphorica 6X, Silicea 12X, Thuja Occidentalis 30C, Excipients q.s.",
-    "howToUse": "For children aged 5-12: Take 1-2 tablets twice daily dissolved on tongue. For teens 13+: Take 2 tablets three times daily before meals or as directed by a homoeopathic physician.",
-    "idealFor": "Growing children, teenagers facing growth delays, bone weakness, and sluggish metabolism.",
-    "importantNotes": "Homeopathic preparation. Store in a cool, dry place away from strong odors and direct sunlight. Keep bottle closed tightly after use.",
+    "ingredients": "Tea Tree Oil, Salicylic Acid.",
+    "idealFor": "Acne-prone, oily, and combination skin; acne, oil control, blemishes, and radiance.",
+    "categoryName": "Skincare",
+    "originalPrice": 1010,
+    "salePrice": 855,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 47,
+    "image": "assets/products/oclear-acne-clear-serum.png",
+    "gallery": [
+      "assets/products/oclear-acne-clear-serum.png",
+      "assets/products/oclear-acne-clear-serum-2.png"
+    ],
+    "badgeType": "green",
+    "inStock": true,
+    "stockCount": 88,
+    "sku": "GLW-020",
+    "description": "Tea Tree Oil and Salicylic Acid serum for acne, excess oil, blemishes, and clearer-looking skin.",
+    "shortDesc": "Tea Tree Oil and Salicylic Acid serum for acne, excess oil, blemishes, and clearer-looking skin.",
+    "benefits": [
+      "Fights Acne & Breakouts: Salicylic Acid helps unclog pores and target active pimples.",
+      "Controls Excess Oil: Tea Tree Oil helps regulate sebum and reduce shine.",
+      "Clears Blemishes & Spot Marks: Gently exfoliates and supports skin renewal.",
+      "Gentle & Safe Care: Mild, fast-absorbing formula designed for effective anti-acne support."
+    ],
+    "availability": "In Stock",
+    "featured": false,
+    "tags": [
+      "skincare",
+      "Skincare",
+      "o",
+      "clear",
+      "acne",
+      "clear",
+      "serum"
+    ],
+    "slug": "oclear-acne-clear-serum",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
     "faqs": [
       {
-        "q": "What is the recommended age group for WeGro?",
-        "a": "It is formulated for children aged 5-12 and teenagers aged 13+ to support physical development and bone strength."
+        "q": "Is O'Clear Acne Clear Serum available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
       },
       {
-        "q": "How should the tablets be taken?",
-        "a": "For kids 5-12, take 1-2 tablets twice daily dissolved on tongue; for teens 13+, take 2 tablets three times daily before meals."
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
       },
       {
-        "q": "What is the exact MRP price?",
-        "a": "Rs. 750.00 (Inclusive of all taxes)."
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
       }
+    ]
+  },
+  {
+    "id": "wellvita-multivitamin-capsules",
+    "name": "Wellvita Multivitamin Capsules",
+    "subtitle": "Plant-Powered Essential Vitamins & Minerals (30 Capsules)",
+    "tagline": "Daily plant-powered multivitamin support.",
+    "category": "supplements",
+    "price": 550,
+    "badge": "Multivitamin",
+    "volume": "30 Capsules",
+    "shortDescription": "Plant-powered daily multivitamin capsules with essential vitamins and minerals for energy, immunity, and overall health.",
+    "features": [
+      "Plant-Powered Nutrition: Plant-derived vitamins and essential minerals support daily health and immunity.",
+      "Complete Micronutrient Blend: Includes Vitamin A, B-Complex, Vitamin C, Vitamin D, Zinc, and Magnesium.",
+      "Daily Wellness Support: Helps fill dietary gaps and support vitality.",
+      "Vibrant Capsule Format: Easy-to-swallow capsules in a dark green bottle with outer display box."
     ],
-    "slug": "wegro-ideal-growth",
-    "shortDescription": "Rs. 750 (Incl. Taxes). Targeted 1-month homeopathic course formulated to support height, bone density, and vitality in growing youth.",
+    "ingredients": "Vitamin A, B1, B2, B3, C, D, Zinc, Magnesium.",
+    "idealFor": "Overall health support, energy, immunity, and essential micronutrient replenishment.",
+    "categoryName": "Supplements",
+    "originalPrice": 650,
+    "salePrice": 550,
+    "onSale": true,
+    "rating": 4.9,
+    "reviewCount": 60,
+    "image": "assets/products/wellvita-multivitamin-capsules-3.png",
+    "gallery": [
+      "assets/products/wellvita-multivitamin-capsules-3.png",
+      "assets/products/wellvita-multivitamin-capsules.png",
+      "assets/products/wellvita-multivitamin-capsules-2.png"
+    ],
+    "badgeType": "burgundy",
+    "inStock": true,
+    "stockCount": 25,
+    "sku": "GLW-021",
+    "description": "Plant-powered daily multivitamin capsules with essential vitamins and minerals for energy, immunity, and overall health.",
+    "shortDesc": "Plant-powered daily multivitamin capsules with essential vitamins and minerals for energy, immunity, and overall health.",
     "benefits": [
-      "Grow Tall. Grow Strong. Grow Happy: Tailored for kids and adolescents.",
-      "One-Month Homoeopathy Course: Complete 1-2-3 phased daily course.",
-      "Natural & Safe: Gentle homeopathic active ingredients with zero side effects.",
-      "Affordable Family Healthcare: Transparent MRP Rs. 750.00 (Incl. Taxes)."
+      "Plant-Powered Nutrition: Plant-derived vitamins and essential minerals support daily health and immunity.",
+      "Complete Micronutrient Blend: Includes Vitamin A, B-Complex, Vitamin C, Vitamin D, Zinc, and Magnesium.",
+      "Daily Wellness Support: Helps fill dietary gaps and support vitality.",
+      "Vibrant Capsule Format: Easy-to-swallow capsules in a dark green bottle with outer display box."
     ],
     "availability": "In Stock",
     "featured": false,
     "tags": [
       "supplements",
-      "wellness",
-      "growth",
-      "calcium",
-      "children",
-      "teens"
+      "Supplements",
+      "wellvita",
+      "multivitamin",
+      "capsules"
+    ],
+    "slug": "wellvita-multivitamin-capsules",
+    "howToUse": "Use as directed on the product packaging or as advised by a qualified healthcare or skincare professional.",
+    "importantNotes": "For best results, read the product label before use. Store in a cool, dry place away from direct sunlight. Keep out of reach of children.",
+    "faqs": [
+      {
+        "q": "Is Wellvita Multivitamin Capsules available for Cash on Delivery?",
+        "a": "Yes, Cash on Delivery is available nationwide across Pakistan."
+      },
+      {
+        "q": "How long does delivery take?",
+        "a": "Most orders are dispatched quickly and delivered through registered courier service."
+      },
+      {
+        "q": "Can I order on WhatsApp?",
+        "a": "Yes, you can place your order or ask product questions through the Glowistic WhatsApp support number."
+      }
     ]
   }
 ];
@@ -675,9 +1536,9 @@ export function getProductById(id) {
 export function getProductBySlug(slug) {
   if (!slug) return null;
   const clean = String(slug).toLowerCase().trim();
-  return PRODUCTS.find(p => 
-    p.slug.toLowerCase() === clean || 
-    p.id.toLowerCase() === clean || 
+  return PRODUCTS.find(p =>
+    p.slug.toLowerCase() === clean ||
+    p.id.toLowerCase() === clean ||
     p.slug.replace(/-/g, '') === clean.replace(/-/g, '') ||
     p.id.replace(/-/g, '') === clean.replace(/-/g, '')
   );
@@ -688,10 +1549,10 @@ export function getProductsByCategory(category) {
   const c = category.toLowerCase().replace(/[-_]/g, '');
   if (c === 'skincare') return PRODUCTS.filter(p => p.category === 'skincare');
   if (c === 'haircare') return PRODUCTS.filter(p => p.category === 'haircare');
-  if (c === 'personalcare') return PRODUCTS.filter(p => p.category === 'personalcare' || p.category === 'bodycare' || p.id === 'neem-face-wash' || p.id === 'hair-n-scalp-shampoo-arnica' || p.id === 'lavender-chamomile-lotion');
-  if (c === 'bodycare') return PRODUCTS.filter(p => p.category === 'bodycare' || p.id === 'lavender-chamomile-lotion');
-  if (c === 'wellness' || c === 'wellnesshealth') return PRODUCTS.filter(p => p.category === 'wellness' || p.id === 'hema-lin-oral-liquid' || p.id === 'super-ton-chocolate-granules');
-  if (c === 'supplements') return PRODUCTS.filter(p => p.category === 'supplements' || p.id === 'super-ton-chocolate-granules' || p.id === 'hema-lin-oral-liquid' || p.id === 'wegro-ideal-growth' || p.id === 'reroot-hair-growth-pack');
+  if (c === 'personalcare') return PRODUCTS.filter(p => p.category === 'personalcare' || p.category === 'bodycare' || p.category === 'skincare');
+  if (c === 'bodycare') return PRODUCTS.filter(p => p.category === 'bodycare');
+  if (c === 'wellness' || c === 'wellnesshealth') return PRODUCTS.filter(p => p.category === 'wellness');
+  if (c === 'supplements') return PRODUCTS.filter(p => p.category === 'supplements');
   return PRODUCTS.filter(p => p.category === category || (p.tags && p.tags.includes(category)));
 }
 
@@ -703,7 +1564,7 @@ export function getFeaturedProducts(count = 4) {
 export function searchProducts(query) {
   if (!query) return [];
   const q = query.toLowerCase().trim();
-  return PRODUCTS.filter(p => 
+  return PRODUCTS.filter(p =>
     p.name.toLowerCase().includes(q) ||
     (p.subtitle && p.subtitle.toLowerCase().includes(q)) ||
     (p.categoryName && p.categoryName.toLowerCase().includes(q)) ||

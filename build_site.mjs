@@ -27,7 +27,7 @@ function renderProductCard(p) {
 
   return `
     <article class="product-card" data-id="${p.id}" data-slug="${p.slug || p.id}" data-category="${p.category}" data-price="${p.price}" data-name="${p.name}" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; position: relative;">
-      <div class="product-card-media" style="position: relative; height: 220px; overflow: hidden; background: #FAF7F2;">
+      <div class="product-card-media" style="position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #FAF7F2;">
         <a href="product.html?slug=${p.slug || p.id}" class="product-card-img-link" aria-label="${p.name}" style="display: block; width: 100%; height: 100%;">
           <img src="${p.image.replace(/^\//, '')}" alt="${p.name}" class="product-card-img" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onerror="this.src='assets/products/placeholder.jpg'" />
         </a>
@@ -132,7 +132,7 @@ console.log('Building all pages...');
     'Discover Glowistic — authentic beauty, skincare, hair care, personal care, and wellness essentials for everyday routines. Simple choices, feel-good care, and nationwide Cash on Delivery across Pakistan.',
     '',
     homeSchema,
-    'assets/products/oclear-serum.jpg'
+    'assets/brand/home-hero-glow.png'
   );
 
   const header = getHeader('home');
@@ -178,12 +178,7 @@ console.log('Building all pages...');
       </div>
       <div class="hero-media">
         <div class="hero-image-wrapper">
-          <img src="assets/products/oclear-serum.jpg" alt="O'Clear Acne Clear Serum — Glowistic" class="hero-main-img" width="540" height="540" />
-          <div class="hero-floating-badge">
-            <span class="badge-tag">Customer Favorite</span>
-            <strong>O'Clear Acne Serum</strong>
-            <span>Rs. 1,450 (COD Available)</span>
-          </div>
+          <img src="assets/brand/home-hero-glow.png" alt="Our Everyday Glow Starts Here — Glowistic Beauty &amp; Skincare" class="hero-main-img" width="736" height="981" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/brand/home-hero-glow.jpg'" />
         </div>
       </div>
     </div>
@@ -200,7 +195,7 @@ console.log('Building all pages...');
       <div class="category-visual-grid">
         <a href="shop.html?category=skincare" class="category-visual-card">
           <div class="category-visual-media">
-            <img src="assets/products/neem-facewash.jpg" alt="Skincare Category" class="category-visual-img" loading="lazy" />
+            <img src="assets/products/hydration-serum.png" alt="Skincare Category" class="category-visual-img" loading="lazy" />
           </div>
           <div class="category-visual-body">
             <h3 class="category-visual-title">Skincare</h3>
@@ -210,7 +205,7 @@ console.log('Building all pages...');
         </a>
         <a href="shop.html?category=hair-care" class="category-visual-card">
           <div class="category-visual-media">
-            <img src="assets/products/reroot-shampoo.jpg" alt="Hair Care Category" class="category-visual-img" loading="lazy" />
+            <img src="assets/products/reroot-argan-shea-intense-repair-shampoo-4.png" alt="Hair Care Category" class="category-visual-img" loading="lazy" />
           </div>
           <div class="category-visual-body">
             <h3 class="category-visual-title">Hair Care</h3>
@@ -220,7 +215,7 @@ console.log('Building all pages...');
         </a>
         <a href="shop.html?category=personal-care" class="category-visual-card">
           <div class="category-visual-media">
-            <img src="assets/products/arnica-shampoo.jpg" alt="Personal Care Category" class="category-visual-img" loading="lazy" />
+            <img src="assets/products/aloe-vera-cucumber-lotion-3.png" alt="Personal Care Category" class="category-visual-img" loading="lazy" />
           </div>
           <div class="category-visual-body">
             <h3 class="category-visual-title">Personal Care</h3>
@@ -230,7 +225,7 @@ console.log('Building all pages...');
         </a>
         <a href="shop.html?category=personal-care" class="category-visual-card">
           <div class="category-visual-media">
-            <img src="assets/products/lavender-lotion.jpg" alt="Body Care Category" class="category-visual-img" loading="lazy" />
+            <img src="assets/products/aloe-vera-calendula-lotion-4.png" alt="Body Care Category" class="category-visual-img" loading="lazy" />
           </div>
           <div class="category-visual-body">
             <h3 class="category-visual-title">Body Care</h3>
@@ -240,7 +235,7 @@ console.log('Building all pages...');
         </a>
         <a href="shop.html?category=wellness-health" class="category-visual-card">
           <div class="category-visual-media">
-            <img src="assets/products/hema-lin.jpg" alt="Wellness Category" class="category-visual-img" loading="lazy" />
+            <img src="assets/products/ginkgovit-oral-liquid-3.png" alt="Wellness Category" class="category-visual-img" loading="lazy" />
           </div>
           <div class="category-visual-body">
             <h3 class="category-visual-title">Wellness</h3>
@@ -250,7 +245,7 @@ console.log('Building all pages...');
         </a>
         <a href="shop.html?category=supplements" class="category-visual-card">
           <div class="category-visual-media">
-            <img src="assets/products/super-ton.jpg" alt="Supplements Category" class="category-visual-img" loading="lazy" />
+            <img src="assets/products/calciwin-granules.png" alt="Supplements Category" class="category-visual-img" loading="lazy" />
           </div>
           <div class="category-visual-body">
             <h3 class="category-visual-title">Supplements</h3>
@@ -297,7 +292,7 @@ console.log('Building all pages...');
           <a href="about.html" class="btn btn-primary">Read Our Story &rarr;</a>
         </div>
         <div class="story-media" style="position: relative;">
-          <img src="assets/products/reroot-growth-pack.jpg" alt="Glowistic Product Family" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md);" />
+          <img src="assets/brand/about-glowistic-portrait.png" alt="Glowistic radiant skin beauty portrait" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;" />
         </div>
       </div>
     </div>
@@ -1303,7 +1298,7 @@ console.log('Building all pages...');
           </p>
         </div>
         <div>
-          <img src="assets/products/oclear-serum.jpg" alt="Glowistic Everyday Care" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md);" />
+          <img src="assets/brand/about-glowistic-portrait.png" alt="Glowistic radiant skin beauty portrait" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;" />
         </div>
       </div>
     </div>
@@ -1378,8 +1373,8 @@ console.log('Building all pages...');
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
         <a href="shop.html?category=skincare" style="text-decoration: none; color: inherit; display: block;">
           <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);">
-            <div style="height: 180px; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
-              <img src="assets/products/neem-facewash.jpg" alt="Skincare Collection" style="height: 100%; object-fit: cover;" />
+            <div style="aspect-ratio: 16 / 9; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
+              <img src="assets/products/hydration-serum.png" alt="Skincare Collection" style="width: 100%; height: 100%; object-fit: cover;" />
             </div>
             <div style="padding: 18px;">
               <h3 style="font-size: 1.1rem; color: var(--color-primary); margin: 0 0 4px; font-weight: 600;">Skincare &rarr;</h3>
@@ -1390,8 +1385,8 @@ console.log('Building all pages...');
 
         <a href="shop.html?category=hair-care" style="text-decoration: none; color: inherit; display: block;">
           <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);">
-            <div style="height: 180px; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
-              <img src="assets/products/reroot-shampoo.jpg" alt="Hair Care Collection" style="height: 100%; object-fit: cover;" />
+            <div style="aspect-ratio: 16 / 9; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
+              <img src="assets/products/reroot-argan-shea-intense-repair-shampoo-4.png" alt="Hair Care Collection" style="width: 100%; height: 100%; object-fit: cover;" />
             </div>
             <div style="padding: 18px;">
               <h3 style="font-size: 1.1rem; color: var(--color-primary); margin: 0 0 4px; font-weight: 600;">Hair Care &rarr;</h3>
@@ -1402,8 +1397,8 @@ console.log('Building all pages...');
 
         <a href="shop.html?category=personal-care" style="text-decoration: none; color: inherit; display: block;">
           <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);">
-            <div style="height: 180px; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
-              <img src="assets/products/lavender-lotion.jpg" alt="Personal & Body Care" style="height: 100%; object-fit: cover;" />
+            <div style="aspect-ratio: 16 / 9; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
+              <img src="assets/products/aloe-vera-cucumber-lotion-3.png" alt="Personal & Body Care" style="width: 100%; height: 100%; object-fit: cover;" />
             </div>
             <div style="padding: 18px;">
               <h3 style="font-size: 1.1rem; color: var(--color-primary); margin: 0 0 4px; font-weight: 600;">Personal &amp; Body Care &rarr;</h3>
@@ -1414,8 +1409,8 @@ console.log('Building all pages...');
 
         <a href="shop.html?category=wellness-health" style="text-decoration: none; color: inherit; display: block;">
           <div style="background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);">
-            <div style="height: 180px; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
-              <img src="assets/products/hema-lin.jpg" alt="Wellness Collection" style="height: 100%; object-fit: cover;" />
+            <div style="aspect-ratio: 16 / 9; overflow: hidden; background: #FAF7F2; display: flex; align-items: center; justify-content: center;">
+              <img src="assets/products/ginkgovit-oral-liquid-3.png" alt="Wellness Collection" style="width: 100%; height: 100%; object-fit: cover;" />
             </div>
             <div style="padding: 18px;">
               <h3 style="font-size: 1.1rem; color: var(--color-primary); margin: 0 0 4px; font-weight: 600;">Wellness &amp; Health &rarr;</h3>
