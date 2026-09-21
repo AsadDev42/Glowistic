@@ -132,7 +132,7 @@ console.log('Building all pages...');
     'Discover Glowistic — authentic beauty, skincare, hair care, personal care, and wellness essentials for everyday routines. Simple choices, feel-good care, and nationwide Cash on Delivery across Pakistan.',
     '',
     homeSchema,
-    'assets/brand/home-hero-glow.png'
+    'assets/brand/glowistic-main-model.png'
   );
 
   const header = getHeader('home');
@@ -178,7 +178,7 @@ console.log('Building all pages...');
       </div>
       <div class="hero-media">
         <div class="hero-image-wrapper">
-          <img src="assets/brand/home-hero-glow.png" alt="Our Everyday Glow Starts Here — Glowistic Beauty &amp; Skincare" class="hero-main-img" width="736" height="981" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/brand/home-hero-glow.jpg'" />
+          <img src="assets/brand/glowistic-main-model.png" alt="Our Everyday Glow Starts Here — Glowistic Beauty &amp; Skincare" class="hero-main-img" width="1122" height="1402" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/brand/home-hero-glow.png'" />
         </div>
       </div>
     </div>
@@ -292,7 +292,7 @@ console.log('Building all pages...');
           <a href="about.html" class="btn btn-primary">Read Our Story &rarr;</a>
         </div>
         <div class="story-media" style="position: relative;">
-          <img src="assets/brand/about-glowistic-portrait.png" alt="Glowistic radiant skin beauty portrait" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;" />
+          <img src="assets/brand/glowistic-main-model.png" alt="Glowistic radiant skin beauty portrait" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;" />
         </div>
       </div>
     </div>
@@ -338,7 +338,7 @@ console.log('Building all pages...');
         </details>
         <details class="faq-item" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; margin-bottom: 12px; padding: 16px 20px;">
           <summary style="font-weight: 600; color: var(--color-primary); cursor: pointer; display: flex; justify-content: space-between;"><span>4. How much is delivery?</span><span>+</span></summary>
-          <p style="margin-top: 12px; color: var(--color-text); line-height: 1.6; font-size: 0.9375rem;">Standard flat-rate shipping is Rs. 200. Delivery is completely <strong>FREE on all orders of Rs. 2,500 or more</strong>!</p>
+          <p style="margin-top: 12px; color: var(--color-text); line-height: 1.6; font-size: 0.9375rem;">Standard flat-rate shipping is Rs. 250. Delivery is completely <strong>FREE on all orders of Rs. 2,500 or more</strong>!</p>
         </details>
         <details class="faq-item" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; margin-bottom: 12px; padding: 16px 20px;">
           <summary style="font-weight: 600; color: var(--color-primary); cursor: pointer; display: flex; justify-content: space-between;"><span>5. Can I order directly via WhatsApp?</span><span>+</span></summary>
@@ -390,6 +390,10 @@ console.log('Building all pages...');
         <span class="badge badge-burgundy">✓ Cash on Delivery Available</span>
         <span class="badge badge-gold">✨ FREE Delivery Over Rs. 2,500</span>
         <span class="badge badge-cream" data-action="show-card-modal" style="cursor: pointer;">🔒 Card Payments Coming Soon</span>
+      </div>
+
+      <div style="margin-top: 18px; padding: 14px 18px; border: 1px solid rgba(197, 155, 39, 0.35); background: #FFF8E6; color: var(--color-primary); border-radius: 10px; font-size: 0.9375rem; line-height: 1.5; max-width: 780px;">
+        <strong>10% off on advance payments</strong> for orders above Rs. 2,000.
       </div>
     </div>
   </section>
@@ -1298,7 +1302,7 @@ console.log('Building all pages...');
           </p>
         </div>
         <div>
-          <img src="assets/brand/about-glowistic-portrait.png" alt="Glowistic radiant skin beauty portrait" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;" />
+          <img src="assets/brand/glowistic-main-model.png" alt="Glowistic radiant skin beauty portrait" style="width: 100%; border-radius: 14px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;" />
         </div>
       </div>
     </div>
@@ -1611,7 +1615,7 @@ console.log('Building all pages...');
 
           <div style="display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 0.9375rem; color: var(--color-text);">
             <span>Delivery (COD):</span>
-            <span id="cart-page-delivery">Rs. 200</span>
+            <span id="cart-page-delivery">Rs. 250</span>
           </div>
 
           <div style="display: flex; justify-content: space-between; padding-top: 16px; border-top: 2px dashed var(--color-border); margin-bottom: 24px; font-size: 1.15rem; color: var(--color-primary);">
@@ -1993,3 +1997,4 @@ if (fs.existsSync(termsSrc)) {
   fs.copyFileSync(termsSrc, termsDst);
   console.log('✓ Synchronized terms-and-conditions.html');
 }
+

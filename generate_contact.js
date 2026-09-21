@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { getHead, getHeader, getFooter } = require('./make_layout');
 
@@ -166,7 +166,7 @@ const body = `
               <span class="acc-icon">+</span>
             </summary>
             <div class="accordion-content">
-              Shipping is 100% FREE on all orders of Rs. 2,500 or more. For orders below Rs. 2,500, a standard flat shipping fee of Rs. 200 applies anywhere in Pakistan.
+              Shipping is 100% FREE on all orders of Rs. 2,500 or more. For orders below Rs. 2,500, a standard flat shipping fee of Rs. 250 applies anywhere in Pakistan.
             </div>
           </details>
 
@@ -198,3 +198,4 @@ const finalHtml = `${head}\n<body data-page="contact">\n${header}\n${body}\n${fo
 
 fs.writeFileSync(path.join(__dirname, 'contact.html'), finalHtml, 'utf8');
 console.log('Successfully generated contact.html');
+

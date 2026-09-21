@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { getHead, getHeader, getFooter } = require('./make_layout');
 
@@ -239,7 +239,7 @@ const cartBody = `
 
             <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9375rem; color: var(--color-text-muted);">
               <span>Delivery (Cash on Delivery):</span>
-              <span id="cart-page-delivery">Rs. 200</span>
+              <span id="cart-page-delivery">Rs. 250</span>
             </div>
 
             <div style="display: flex; justify-content: space-between; padding-top: 14px; margin-top: 14px; border-top: 2px solid var(--color-border); font-size: 1.25rem; font-weight: 700; color: var(--color-primary); margin-bottom: 24px;">
@@ -498,3 +498,4 @@ require('./generate_contact.js');
 require('./generate_policies.js');
 
 console.log('ALL 14 HTML PAGES REBUILT SUCCESSFULLY!');
+

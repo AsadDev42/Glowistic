@@ -6,7 +6,7 @@ import { getProductById } from '../data/products.js';
 
 const STORAGE_KEY = 'glowistic_cart_v1';
 export const FREE_DELIVERY_THRESHOLD = 2500;
-export const STANDARD_DELIVERY_FEE = 200;
+export const STANDARD_DELIVERY_FEE = 250;
 export const WHATSAPP_PHONE = '923445422609';
 
 class CartStore {

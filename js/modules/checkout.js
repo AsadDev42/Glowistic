@@ -3,6 +3,7 @@
  */
 import { cart } from '../state/cart.js';
 import { emailService } from './emailService.js';
+import { whatsappService } from './whatsappService.js';
 
 export const PAKISTAN_PROVINCES = [
   'Punjab',
@@ -298,10 +299,17 @@ export class CheckoutManager {
         // 2. Dispatch Order Notification via Email Service (without exposing credentials)
         await emailService.sendOrderNotification(orderData);
 
-        // 3. Clear user cart
+        // 3. Dispatch Automated WhatsApp Order Alert to Owner (+923136895852)
+        try {
+          await whatsappService.sendOrderNotification(orderData);
+        } catch (waErr) {
+          console.error('[Glowistic WhatsApp Dispatch Warning]', waErr);
+        }
+
+        // 4. Clear user cart
         cart.clearCart();
 
-        // 4. Redirect to Order Confirmation page
+        // 5. Redirect to Order Confirmation page
         window.location.href = 'confirmation.html';
       } catch (error) {
         console.error('Order processing error:', error);
@@ -408,3 +416,4 @@ export class CheckoutManager {
     }
   }
 }
+

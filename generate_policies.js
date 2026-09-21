@@ -46,7 +46,7 @@ const policies = [
       <div class="policy-section" style="margin-bottom: 28px;">
         <h2 style="font-size: 1.35rem; color: var(--color-primary); margin-bottom: 10px;">4. Shipping Charges &amp; Free Delivery Threshold</h2>
         <ul style="color: var(--color-text); line-height: 1.7; font-size: 0.95rem; padding-left: 20px;">
-          <li><strong>Standard Flat-Rate Delivery:</strong> Rs. 200 anywhere in Pakistan for orders below Rs. 2,500.</li>
+          <li><strong>Standard Flat-Rate Delivery:</strong> Rs. 250 anywhere in Pakistan for orders below Rs. 2,500.</li>
           <li><strong>FREE Nationwide Delivery:</strong> Automatically applied at checkout on all orders with a subtotal of <strong>Rs. 2,500 or more</strong>.</li>
         </ul>
       </div>
@@ -220,3 +220,4 @@ policies.forEach(p => {
   fs.writeFileSync(path.join(__dirname, p.file), `${head}\n<body data-page="${p.pageId}">\n${header}\n${body}\n${footer}`, 'utf8');
   console.log('Generated ' + p.file);
 });
+

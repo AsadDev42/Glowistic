@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { getHead, getHeader, getFooter } = require('./make_layout');
 
@@ -172,7 +172,7 @@ const policies = [
       <div class="policy-section">
         <h2>2. Delivery Charges &amp; Free Shipping Threshold</h2>
         <ul>
-          <li><strong>Standard Nationwide Delivery:</strong> Flat Rs. 200 on orders under Rs. 2,500.</li>
+          <li><strong>Standard Nationwide Delivery:</strong> Flat Rs. 250 on orders under Rs. 2,500.</li>
           <li><strong>Free Nationwide Delivery:</strong> Automatically applied to all orders of <strong>Rs. 2,500 or more</strong>.</li>
         </ul>
       </div>
@@ -365,3 +365,4 @@ policies.forEach(p => {
 fs.writeFileSync(path.join(__dirname, 'generate_policies.js'), policiesCode, 'utf8');
 
 console.log('Successfully updated all generators.');
+

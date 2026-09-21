@@ -61,7 +61,7 @@ const body = `
 
           <div style="display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 0.9375rem; color: var(--color-text);">
             <span>Delivery (COD):</span>
-            <span id="cart-page-delivery">Rs. 200</span>
+            <span id="cart-page-delivery">Rs. 250</span>
           </div>
 
           <div style="display: flex; justify-content: space-between; padding-top: 16px; border-top: 2px dashed var(--color-border); margin-bottom: 24px; font-size: 1.15rem; color: var(--color-primary);">
@@ -111,3 +111,4 @@ const finalHtml = `${head}\n<body data-page="cart">\n${header}\n${body}\n${foote
 
 fs.writeFileSync(path.join(__dirname, 'cart.html'), finalHtml, 'utf8');
 console.log('Successfully generated cart.html');
+

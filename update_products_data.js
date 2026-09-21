@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const productsData = `/**
@@ -159,7 +159,7 @@ export const PRODUCTS = [
       },
       {
         q: "What are the delivery charges?",
-        a: "Orders of Rs. 2,500 or more receive FREE Delivery; otherwise standard nationwide COD delivery is Rs. 200."
+        a: "Orders of Rs. 2,500 or more receive FREE Delivery; otherwise standard nationwide COD delivery is Rs. 250."
       }
     ]
   },
@@ -506,3 +506,4 @@ export function searchProducts(query) {
 
 fs.writeFileSync(path.join(__dirname, 'js', 'data', 'products.js'), productsData, 'utf8');
 console.log('Successfully updated js/data/products.js');
+

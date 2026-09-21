@@ -308,7 +308,7 @@ function getFooter() {
       </div>
       <div class="cart-summary-line">
         <span>Delivery (Cash on Delivery):</span>
-        <span id="cart-drawer-delivery">Rs. 200</span>
+        <span id="cart-drawer-delivery">Rs. 250</span>
       </div>
       <div class="cart-summary-line grand">
         <span>Total:</span>
@@ -358,3 +358,4 @@ module.exports = {
   getHeader,
   getFooter
 };
+
