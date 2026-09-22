@@ -109,7 +109,7 @@ console.log('Building all pages...');
         "telephone": "+923445422609",
         "sameAs": [
           "https://www.instagram.com/glowisticpk",
-          "https://www.facebook.com/glowisticpk.store"
+          "https://www.facebook.com/glowisticpkofficial"
         ]
       },
       {
@@ -1507,7 +1507,7 @@ console.log('Building all pages...');
               </div>
               <div>
                 <strong style="color: var(--color-heading); display: block;">Facebook:</strong>
-                <a href="https://www.facebook.com/glowisticpk.store" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">Glowistic Official</a>
+                <a href="https://www.facebook.com/glowisticpkofficial" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">Glowistic Official</a>
               </div>
             </div>
           </div>

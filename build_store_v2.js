@@ -18,7 +18,7 @@ const homeSchema = {
       "telephone": "+923445422609",
       "sameAs": [
         "https://www.instagram.com/glowisticpk",
-        "https://www.facebook.com/glowisticpk.store"
+        "https://www.facebook.com/glowisticpkofficial"
       ]
     },
     {

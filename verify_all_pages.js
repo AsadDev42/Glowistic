@@ -41,7 +41,7 @@ pages.forEach(file => {
     { name: 'Connect Column', test: html.includes('<h4>Connect</h4>') },
     { name: 'WhatsApp Link', test: html.includes('https://wa.me/923445422609') },
     { name: 'Instagram Link', test: html.includes('https://www.instagram.com/glowisticpk') },
-    { name: 'Facebook Link', test: html.includes('https://www.facebook.com/glowisticpk.store') },
+    { name: 'Facebook Link', test: html.includes('https://www.facebook.com/glowisticpkofficial') },
     { name: 'WhatsApp Number Display', test: html.includes('03445422609') },
     { name: 'Copyright Bottom', test: html.includes('&copy; 2026 Glowistic. All rights reserved.') || html.includes('© 2026 Glowistic. All rights reserved.') }
   ];

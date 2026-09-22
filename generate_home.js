@@ -15,7 +15,7 @@ const homeSchema = {
       "telephone": "+923445422609",
       "sameAs": [
         "https://www.instagram.com/glowisticpk",
-        "https://www.facebook.com/glowisticpk.store"
+        "https://www.facebook.com/glowisticpkofficial"
       ]
     },
     {
@@ -475,7 +475,7 @@ const body = `
         </details>
         <details class="faq-item">
           <summary class="faq-question"><span>9. How can I contact Glowistic?</span><span class="faq-indicator">+</span></summary>
-          <div class="faq-answer">You can contact us via WhatsApp at <strong>03445422609</strong>, visit our <a href="contact.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">Contact Page</a>, or reach out on Instagram (<strong>@glowisticpk</strong>) and Facebook (<strong>@glowisticpk.store</strong>).</div>
+          <div class="faq-answer">You can contact us via WhatsApp at <strong>03445422609</strong>, visit our <a href="contact.html" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">Contact Page</a>, or reach out on Instagram (<strong>@glowisticpk</strong>) and Facebook (<strong>@glowisticpkofficial</strong>).</div>
         </details>
         <details class="faq-item">
           <summary class="faq-question"><span>10. What should I do if I have a question about a product?</span><span class="faq-indicator">+</span></summary>

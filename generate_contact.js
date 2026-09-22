@@ -66,11 +66,11 @@ const body = `
                   <div style="font-size: 0.75rem; color: var(--color-text-muted);">@glowisticpk</div>
                 </div>
               </a>
-              <a href="https://www.facebook.com/glowisticpk.store/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--color-border); border-radius: 8px; text-decoration: none; color: inherit;">
+              <a href="https://www.facebook.com/glowisticpkofficial" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--color-border); border-radius: 8px; text-decoration: none; color: inherit;">
                 <span style="font-size: 1.25rem;">📘</span>
                 <div>
                   <strong style="font-size: 0.875rem; color: var(--color-text);">Facebook</strong>
-                  <div style="font-size: 0.75rem; color: var(--color-text-muted);">@glowisticpk.store</div>
+                  <div style="font-size: 0.75rem; color: var(--color-text-muted);">@glowisticpkofficial</div>
                 </div>
               </a>
               <div style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--color-border); border-radius: 8px;">
