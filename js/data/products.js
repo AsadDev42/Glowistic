@@ -2202,8 +2202,7 @@ export const PRODUCTS = [
     "reviewCount": 126,
     "image": "assets/products/oclear-acne-clear-serum.png",
     "gallery": [
-      "assets/products/oclear-acne-clear-serum.png",
-      "assets/products/oclear-acne-clear-serum-2.png"
+      "assets/products/oclear-acne-clear-serum.png"
     ],
     "badge": "Anti-Acne",
     "badgeType": "green",
