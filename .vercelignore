@@ -1,0 +1,57 @@
+# Vercel Ignore File
+# Ensure Vercel treats this repository strictly as a static storefront
+
+# Dev servers and local scripts
+server.js
+server.ps1
+start-server.bat
+scripts/
+worker/
+build_store.py
+build_site.mjs
+build_store_v2.js
+build_helpers.js
+sync_pdf_catalog.js
+update_full_catalog_from_client.mjs
+update_cover_images.mjs
+update_footer_template.js
+update_generators.js
+update_products_data.js
+generate_about.js
+generate_article.js
+generate_blog.js
+generate_cart.js
+generate_checkout.js
+generate_confirmation.js
+generate_contact.js
+generate_home.js
+generate_policies.js
+generate_product.js
+generate_shop.js
+make_articles.js
+make_layout.js
+make_pages.js
+make_privacy.js
+make_shipping.js
+make_terms.js
+polish_home.js
+inject_schemas.js
+content_audit.js
+copy_logos.js
+ecom_qa_test.js
+fix_prod_h1.js
+qa_audit.js
+rebuild_all_pages.js
+run_full_ecom_test.js
+test_verbatim.js
+verify_all_pages.js
+add_floating_wa.js
+apply_logos.js
+
+# Env & temporary files
+.env
+.env.example
+tmp/
+*.log
+*.txt
+top_bar.png
