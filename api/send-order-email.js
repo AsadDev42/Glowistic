@@ -10,7 +10,7 @@
 
 const DEFAULT_TO = 'Glowisticpk@gmail.com';
 const DEFAULT_FROM = 'Glowistic Orders <onboarding@resend.dev>';
-const SITE_URL = 'https://www.glowisticpk.com';
+const SITE_URL = 'https://glowisticpk.com';
 const MAX_ITEMS = 50;
 
 const esc = (value) => String(value == null ? '' : value)
