@@ -340,8 +340,7 @@ module.exports = async function handler(req, res) {
     const result = await response.json().catch(() => ({}));
 
     if (!response.ok) {
-      console.error('[order-email] Resend error', response.status, result);
-      return res.status(502).json({ success: false, error: 'Email provider rejected the request' });
+      return res.status(502).json({ success: false, error: 'Email provider rejected the request', details: result, resendStatus: response.status });
     }
     return res.status(200).json({ success: true, id: result.id || null });
   } catch (err) {
