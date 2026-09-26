@@ -9,7 +9,14 @@ const REQUEST_TIMEOUT_MS = 10000;
 
 export class OrderEmailService {
   getEndpoint() {
-    return (window.GLOWISTIC_CONFIG && window.GLOWISTIC_CONFIG.ORDER_EMAIL_ENDPOINT) || ORDER_EMAIL_ENDPOINT;
+    if (window.GLOWISTIC_CONFIG && window.GLOWISTIC_CONFIG.ORDER_EMAIL_ENDPOINT) {
+      return window.GLOWISTIC_CONFIG.ORDER_EMAIL_ENDPOINT;
+    }
+    // If running on GitHub Pages or local testing, route to the live Vercel API
+    if (typeof window !== 'undefined' && window.location && (window.location.hostname.includes('github.io') || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+      return 'https://glowisticpk.com/api/send-order-email';
+    }
+    return ORDER_EMAIL_ENDPOINT;
   }
 
   /**
