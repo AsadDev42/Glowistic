@@ -8,7 +8,7 @@
  *                           ORDER_EMAIL_FROM (default: Glowistic Orders <onboarding@resend.dev>)
  */
 
-const DEFAULT_TO = 'Glowisticpk@gmail.com';
+const DEFAULT_TO = 'glowisticpk@gmail.com';
 const DEFAULT_FROM = 'Glowistic Orders <onboarding@resend.dev>';
 const SITE_URL = 'https://glowisticpk.com';
 const MAX_ITEMS = 50;
@@ -318,14 +318,11 @@ module.exports = async function handler(req, res) {
 
   const payload = {
     from: process.env.ORDER_EMAIL_FROM || DEFAULT_FROM,
-    to: [process.env.ORDER_EMAIL_TO || DEFAULT_TO],
+    to: [(process.env.ORDER_EMAIL_TO || DEFAULT_TO).toLowerCase().trim()],
     subject: `🛍️ New COD Order #${order.orderNumber} — ${order.customer.name} (${order.customer.city}) — ${rs(order.total)}`,
     html: buildEmailHtml(order),
     text: buildEmailText(order)
   };
-  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(order.customer.email)) {
-    payload.reply_to = order.customer.email;
-  }
 
   try {
     const response = await fetch('https://api.resend.com/emails', {
